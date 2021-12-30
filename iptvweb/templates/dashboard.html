@@ -1,0 +1,987 @@
+<!doctype html>
+<html class="modern fixed has-top-menu has-left-sidebar-half" data-style-switcher-options="{'changeLogo': false}">
+
+<head>
+    {% load static %}
+    <!-- Basic -->
+    <meta charset="UTF-8">
+
+    <title>IPTV Dashboard</title>
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Web Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="{% static 'dash/vendor/bootstrap/css/bootstrap.css' %}" />
+    <link rel="stylesheet" href="{% static 'dash/vendor/animate/animate.compat.css' %}">
+
+    <link rel="stylesheet" href="{% static 'dash/vendor/font-awesome/css/all.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'dash/vendor/boxicons/css/boxicons.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'dash/vendor/magnific-popup/magnific-popup.css' %}" />
+    <link rel="stylesheet" href="{% static 'dash/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css' %}" />
+
+    <!-- Specific Page Vendor CSS -->
+    <link rel="stylesheet" href="{% static 'dash/vendor/jquery-ui/jquery-ui.css' %}" />
+    <link rel="stylesheet" href="{% static 'dash/vendor/jquery-ui/jquery-ui.theme.css' %}" />
+    <link rel="stylesheet" href="{% static 'dash/vendor/bootstrap-multiselect/css/bootstrap-multiselect.css' %}" />
+    <link rel="stylesheet" href="{% static 'dash/vendor/morris/morris.css' %}" />
+
+    <!--(remove-empty-lines-end)-->
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{% static 'dash/css/theme.css' %}" />
+
+
+    <!-- Theme Layout -->
+    <link rel="stylesheet" href="{% static 'dash/css/layouts/modern.css' %}" />
+    <!--(remove-empty-lines-end)-->
+
+
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="{% static 'dash/css/custom.css' %}">
+
+    <!-- Head Libs -->
+    <script src="{% static 'dash/vendor/modernizr/modernizr.js' %}"></script>
+    <script src="{% static 'dash/master/style-switcher/style.switcher.localstorage.js' %}"></script>
+
+</head>
+
+<body>
+    <section class="body">
+
+        <!-- start: header -->
+        <header class="header header-nav-menu header-nav-links">
+            <div class="logo-container">
+                <a href="../" class="logo">
+                    <img src="{% static 'website/img/IPTV intel.png' %}" class="logo-image" width="90" height="24" alt="Porto Admin" /><img src="{% static 'website/img/IPTV intel.png' %}" class="logo-image-mobile" width="90" height="24" alt="" />
+                </a>
+                <button class="btn header-btn-collapse-nav d-lg-none" data-toggle="collapse" data-target=".header-nav">
+						<i class="fas fa-bars"></i>
+					</button>
+
+                <!-- start: header nav menu -->
+                <div class="header-nav collapse">
+                    <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1 header-nav-main-square">
+                        <nav>
+                            <ul class="nav nav-pills" id="mainNav">
+                                <li class="">
+                                    <a class="nav-link" href="{% url 'home' %}">
+									        Back to website
+									    </a>
+                                </li>
+                                <li class="">
+                                    <a class="nav-link" href="#">
+									        Dashboard
+									    </a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- end: header nav menu -->
+            </div>
+
+            <!-- start: search & user box -->
+            <div class="header-right">
+
+                <a class="btn search-toggle d-none d-md-inline-block d-xl-none" data-toggle-class="active" data-target=".search"><i class="bx bx-search"></i></a>
+                <form action="#" class="search search-style-1 nav-form d-none d-xl-inline-block">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="q" id="q" placeholder="Search...">
+                        <span class="input-group-append">
+								<button class="btn btn-default" type="submit"><i class="bx bx-search"></i></button>
+							</span>
+                    </div>
+                </form>
+
+                <span class="separator"></span>
+                <ul class="notifications">
+                    <li>
+                        <a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+                            <i class="bx bx-task"></i>
+                            <!-- <span class="badge">3</span> -->
+                        </a>
+
+                        <div class="dropdown-menu notification-menu large">
+                            <div class="notification-title">
+                                <span class="float-right badge badge-default"></span> Tasks
+                            </div>
+
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <p class="clearfix mb-1">
+                                            <span class="message float-left">Generating Sales Report</span>
+                                            <span class="message float-right text-dark">60%</span>
+                                        </p>
+                                        <div class="progress progress-xs light">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <p class="clearfix mb-1">
+                                            <span class="message float-left">Importing Contacts</span>
+                                            <span class="message float-right text-dark">98%</span>
+                                        </p>
+                                        <div class="progress progress-xs light">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;"></div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <p class="clearfix mb-1">
+                                            <span class="message float-left">Uploading something big</span>
+                                            <span class="message float-right text-dark">33%</span>
+                                        </p>
+                                        <div class="progress progress-xs light mb-1">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%;"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+                            <i class="bx bx-envelope"></i>
+                            <!-- <span class="badge"></span> -->
+                        </a>
+
+                        <div class="dropdown-menu notification-menu">
+                            <div class="notification-title">
+                                <span class="float-right badge badge-default"></span> Messages
+                            </div>
+
+                            <div class="content">
+                                <ul>
+
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <span class="image image-as-text bg-secondary">JJ</span>
+                                            <span class="title">user 2</span>
+                                            <span class="message truncate">user generated sample text message</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <span class="image image-as-text bg-tertiary">MD</span>
+                                            <span class="title">user 3</span>
+                                            <span class="message">user generated sample text message</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <span class="image image-as-text bg-quaternary">RD</span>
+                                            <span class="title">User 1</span>
+                                            <span class="message">user generated sample text message</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <hr />
+
+                                <div class="text-right">
+                                    <a href="#" class="view-more">View All</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle notification-icon" data-toggle="dropdown">
+                            <i class="bx bx-bell"></i>
+                            <!-- <span class="badge"></span> -->
+                        </a>
+
+                        <div class="dropdown-menu notification-menu">
+                            <div class="notification-title">
+                                <span class="float-right badge badge-default"></span> Alerts
+                            </div>
+
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <div class="image">
+                                                <i class="bx bx-dislike bg-danger"></i>
+                                            </div>
+                                            <span class="title">Server is Down!</span>
+                                            <span class="message">Just now</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <div class="image">
+                                                <i class="bx bx-lock-alt bg-warning"></i>
+                                            </div>
+                                            <span class="title">User Locked</span>
+                                            <span class="message">15 minutes ago</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="clearfix">
+                                            <div class="image">
+                                                <i class="bx bx-wifi bg-success"></i>
+                                            </div>
+                                            <span class="title">Connection Restaured</span>
+                                            <span class="message">10/10/2021</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <hr />
+
+                                <div class="text-right">
+                                    <a href="#" class="view-more">View All</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <span class="separator"></span>
+
+                <div id="userbox" class="userbox">
+                    <a href="#" data-toggle="dropdown">
+                        <span class="profile-picture profile-picture-as-text">AD</span>
+                        <div class="profile-info profile-info-no-role" data-lock-name="{{ user.username }}" data-lock-email="Admin@iptvintel.com">
+                            <span class="name">Hi,<strong class="font-weight-semibold">{{ user.username }}</strong></span>
+                        </div>
+
+                        <i class="fas fa-chevron-down text-color-dark"></i>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="#"><i class="bx bx-user"></i> My Profile</a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="bx bx-lock-open-alt"></i> Lock Screen</a>
+                            </li>
+                            <li>
+                                <a role="menuitem" tabindex="-1" href="#"><i class="bx bx-log-out"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end: search & user box -->
+        </header>
+        <!-- end: header -->
+
+        <div class="inner-wrapper">
+            <!-- start: sidebar -->
+            <aside id="sidebar-left" class="sidebar-left">
+
+                <div class="sidebar-header">
+                    <div class="sidebar-toggle d-none d-md-flex" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+                        <i class="fas fa-bars" aria-label="Toggle sidebar"></i>
+                    </div>
+                </div>
+
+                <div class="nano">
+                    <div class="nano-content">
+                        <nav id="menu" class="nav-main" role="navigation">
+
+                            <ul class="nav nav-main">
+                                <li>
+                                    <a class="nav-link" href="#">
+                                        <i class="bx bx-home-alt" aria-hidden="true"></i>
+                                        <span>Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="nav-group-label">Email</li>
+                                <li>
+                                    <a class="nav-link" href="#">
+                                        <i class="bx bx-envelope" aria-hidden="true"></i>
+                                        <span>Mailbox</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <hr class="separator" />
+
+                        <div class="sidebar-widget widget-tasks">
+                            <div class="widget-header">
+                                <h6>IPTV Subscription</h6>
+                            </div>
+                            <div class="widget-content">
+                                <ul class="list-unstyled m-0">
+                                    <li><a href="#">GEN + IPTV</a></li>
+                                    <li><a href="#">Premuim IPTV</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <script>
+                        // Maintain Scroll Position
+                        if (typeof localStorage !== 'undefined') {
+                            if (localStorage.getItem('sidebar-left-position') !== null) {
+                                var initialPosition = localStorage.getItem('sidebar-left-position'),
+                                    sidebarLeft = document.querySelector('#sidebar-left .nano-content');
+
+                                sidebarLeft.scrollTop = initialPosition;
+                            }
+                        }
+                    </script>
+
+
+                </div>
+
+            </aside>
+            <!-- end: sidebar -->
+
+            <section role="main" class="content-body">
+                <header class="page-header">
+                    <h2>HELLO {{ user.username }}, WELCOME TO THE IPTV ADMIN DASHBOARD (demo purpose only) </h2>
+
+                    <div class="right-wrapper text-right">
+                        <ol class="breadcrumbs">
+                            <li>
+                                <a href="#">
+                                    <i class="bx bx-home-alt"></i>
+                                </a>
+                            </li>
+                            <li><span>ADMIN</span></li>
+                            <li><span>{{ user.username }}</span></li>
+                        </ol>
+
+                        <a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fas fa-chevron-left"></i></a>
+                    </div>
+                </header>
+
+                <!-- start: page -->
+                <div class="row">
+                    <div class="col-lg-6 mb-3">
+                        <section class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-xl-8">
+                                        <div class="chart-data-selector" id="salesSelectorWrapper">
+                                            <h2>
+                                                Sales:
+                                                <strong>
+														<select class="form-control" id="salesSelector">
+															<option value="Admin" selected>Admin</option>
+														
+														</select>
+													</strong>
+                                            </h2>
+                                            <p class="card-subtitle">demo data is in use.</p>
+
+                                            <div id="salesSelectorItems" class="chart-data-selector-items mt-3">
+                                                <!-- Flot: Sales Porto Admin -->
+                                                <div class="chart chart-sm" data-sales-rel="Admin" id="flotDashSales1" class="chart-active" style="height: 203px;"></div>
+                                                <script>
+                                                    var flotDashSales1Data = [{
+                                                        data: [
+                                                            ["Jan", 140],
+                                                            ["Feb", 240],
+                                                            ["Mar", 190],
+                                                            ["Apr", 140],
+                                                            ["May", 180],
+                                                            ["Jun", 320],
+                                                            ["Jul", 270],
+                                                            ["Aug", 180]
+                                                        ],
+                                                        color: "#CCCCCC"
+                                                    }];
+
+                                                    // See: js/examples/examples.dashboard.js for more settings.
+                                                </script>
+
+                                                <!-- Flot: Sales Porto Drupal -->
+                                                <div class="chart chart-sm" data-sales-rel="Porto Drupal" id="flotDashSales2" class="chart-hidden"></div>
+                                                <script>
+                                                    var flotDashSales2Data = [{
+                                                        data: [
+                                                            ["Jan", 240],
+                                                            ["Feb", 240],
+                                                            ["Mar", 290],
+                                                            ["Apr", 540],
+                                                            ["May", 480],
+                                                            ["Jun", 220],
+                                                            ["Jul", 170],
+                                                            ["Aug", 190]
+                                                        ],
+                                                        color: "#2baab1"
+                                                    }];
+
+                                                    // See: js/examples/examples.dashboard.js for more settings.
+                                                </script>
+
+                                                <!-- Flot: Sales Porto Wordpress -->
+                                                <div class="chart chart-sm" data-sales-rel="Porto Wordpress" id="flotDashSales3" class="chart-hidden"></div>
+                                                <script>
+                                                    var flotDashSales3Data = [{
+                                                        data: [
+                                                            ["Jan", 840],
+                                                            ["Feb", 740],
+                                                            ["Mar", 690],
+                                                            ["Apr", 940],
+                                                            ["May", 1180],
+                                                            ["Jun", 820],
+                                                            ["Jul", 570],
+                                                            ["Aug", 780]
+                                                        ],
+                                                        color: "#734ba9"
+                                                    }];
+
+                                                    // See: js/examples/examples.dashboard.js for more settings.
+                                                </script>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 text-center">
+                                        <h2 class="card-title mt-3">Sales Goal</h2>
+                                        <p class="card-subtitle">demo data is in use.</p>
+                                        <div class="liquid-meter-wrapper liquid-meter-sm mt-3">
+                                            <div class="liquid-meter">
+                                                <meter min="0" max="100" value="35" id="meterSales"></meter>
+                                            </div>
+                                            <div class="liquid-meter-selector mt-4 pt-1" id="meterSalesSel">
+                                                <a href="#" data-val="35" class="active">Monthly Goal</a>
+                                                <a href="#" data-val="28">Annual Goal</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row mb-3">
+                            <div class="col-xl-6">
+                                <section class="card card-featured-left card-featured-primary mb-3">
+                                    <div class="card-body">
+                                        <div class="widget-summary">
+                                            <div class="widget-summary-col widget-summary-col-icon">
+                                                <div class="summary-icon bg-primary">
+                                                    <i class="fas fa-life-ring"></i>
+                                                </div>
+                                            </div>
+                                            <div class="widget-summary-col">
+                                                <div class="summary">
+                                                    <h4 class="title">Support Questions</h4>
+                                                    <div class="info">
+                                                        <strong class="amount">2</strong>
+                                                        <span class="text-primary">unread</span>
+                                                    </div>
+                                                </div>
+                                                <div class="summary-footer">
+                                                    <a class="text-muted text-uppercase" href="#">(view all)</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-xl-6">
+                                <section class="card card-featured-left card-featured-secondary">
+                                    <div class="card-body">
+                                        <div class="widget-summary">
+                                            <div class="widget-summary-col widget-summary-col-icon">
+                                                <div class="summary-icon bg-secondary">
+                                                    <i class="fas fa-dollar-sign"></i>
+                                                </div>
+                                            </div>
+                                            <div class="widget-summary-col">
+                                                <div class="summary">
+                                                    <h4 class="title">Total Profit</h4>
+                                                    <div class="info">
+                                                        <strong class="amount">ksh 0</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="summary-footer">
+                                                    <a class="text-muted text-uppercase" href="#">(0 sales)</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <section class="card card-featured-left card-featured-tertiary mb-3">
+                                    <div class="card-body">
+                                        <div class="widget-summary">
+
+                                            <div class="widget-summary-col">
+                                                <div class="summary">
+                                                    <h4 class="title">Complete Orders</h4>
+                                                    <div class="info">
+                                                        <strong class="amount">3</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="summary-footer">
+                                                    <a class="text-muted text-uppercase" href="#">(Report)</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-xl-6">
+                                <section class="card card-featured-left card-featured-quaternary">
+                                    <div class="card-body">
+                                        <div class="widget-summary">
+
+                                            <div class="widget-summary-col">
+                                                <div class="summary">
+                                                    <h4 class="title">Registered Users</h4>
+                                                    <div class="info">
+                                                        <strong class="amount">3</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="summary-footer">
+                                                    <a class="text-muted text-uppercase" href="#">12/6/2021</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-4">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <section class="card">
+                            <header class="card-header">
+                                <div class="card-actions">
+                                    <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                                    <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                                </div>
+
+                                <h2 class="card-title">Best Seller</h2>
+                                <p class="card-subtitle">demo data is in use.</p>
+                            </header>
+                            <div class="card-body">
+
+                                <!-- Flot: Basic -->
+                                <div class="chart chart-md" id="flotDashBasic"></div>
+                                <script>
+                                    var flotDashBasicData = [{
+                                        data: [
+                                            [0, 170],
+                                            [1, 169],
+                                            [2, 173],
+                                            [3, 188],
+                                            [4, 147],
+                                            [5, 113],
+                                            [6, 128],
+                                            [7, 169],
+                                            [8, 173],
+                                            [9, 128],
+                                            [10, 128]
+                                        ],
+                                        label: "GEN + IPTV",
+                                        color: "#D64B4B"
+                                    }, {
+                                        data: [
+                                            [0, 115],
+                                            [1, 124],
+                                            [2, 114],
+                                            [3, 121],
+                                            [4, 115],
+                                            [5, 83],
+                                            [6, 102],
+                                            [7, 148],
+                                            [8, 147],
+                                            [9, 103],
+                                            [10, 113]
+                                        ],
+                                        label: "Premium IPTV",
+                                        color: "#0090D9"
+                                    }];
+
+                                    // See: js/examples/examples.dashboard.js for more settings.
+                                </script>
+
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-6">
+                        <section class="card">
+                            <header class="card-header">
+                                <div class="card-actions">
+                                    <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                                    <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                                </div>
+                                <h2 class="card-title">Server Usage</h2>
+                                <p class="card-subtitle">demo data is in use.</p>
+                            </header>
+                            <div class="card-body">
+
+                                <!-- Flot: Curves -->
+                                <div class="chart chart-md" id="flotDashRealTime"></div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="row pt-4 mt-2">
+                    <div class="col-lg-6 col-xl-3">
+                        <section class="card card-transparent">
+                            <header class="card-header">
+                                <div class="card-actions">
+                                    <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                                    <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                                </div>
+
+                                <h2 class="card-title">My Profile</h2>
+                            </header>
+                            <div class="card-body">
+                                <section class="card card-group">
+                                    <header class="card-header bg-primary w-100">
+
+                                        <div class="widget-profile-info">
+                                            <div class="profile-picture">
+                                                <img src="{% static 'dash/img/!logged-user.jpg'%}">
+                                            </div>
+                                            <div class="profile-info">
+                                                <h4 class="name font-weight-semibold">Mike</h4>
+                                                <h5 class="role">Admin</h5>
+                                                <div class="profile-footer">
+                                                    <a href="#">EditProfile</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </header>
+
+                                </section>
+
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-6 col-xl-3">
+                        <section class="card card-transparent">
+                            <header class="card-header">
+                                <div class="card-actions">
+                                    <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                                    <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                                </div>
+
+                                <h2 class="card-title">My Stats</h2>
+                            </header>
+                            <div class="card-body">
+                                <section class="card">
+                                    <div class="card-body">
+                                        <div class="small-chart float-right" id="sparklineBarDash"></div>
+                                        <script type="text/javascript">
+                                            var sparklineBarDashData = [5, 6, 7, 2, 0, 4, 2, 4, 2, 0, 4, 2, 4, 2, 0, 4];
+                                        </script>
+                                        <div class="h4 font-weight-bold mb-0">3</div>
+                                        <p class="text-3 text-muted mb-0">Average Profile Visits</p>
+                                    </div>
+                                </section>
+                                <section class="card">
+                                    <div class="card-body">
+                                        <div class="circular-bar circular-bar-xs m-0 mt-1 mr-4 mb-0 float-right">
+                                            <div class="circular-bar-chart" data-percent="90" data-plugin-options='{ "barColor": "#2baab1", "delay": 300, "size": 50, "lineWidth": 4 }'>
+                                                <strong>Average</strong>
+                                                <label><span class="percent">90</span>%</label>
+                                            </div>
+                                        </div>
+                                        <div class="h4 font-weight-bold mb-0">Website</div>
+                                        <p class="text-3 text-muted mb-0"> performance</p>
+                                    </div>
+                                </section>
+                                <section class="card">
+                                    <div class="card-body">
+                                        <div class="small-chart float-right" id="sparklineLineDash"></div>
+                                        <script type="text/javascript">
+                                            var sparklineLineDashData = [15, 16, 17, 19, 10, 15, 13, 12, 12, 14, 16, 17];
+                                        </script>
+                                        <div class="h4 font-weight-bold mb-0">89</div>
+                                        <p class="text-3 text-muted mb-0">User activities</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-12 col-xl-6">
+                        <section class="card">
+                            <header class="card-header card-header-transparent">
+                                <div class="card-actions">
+                                    <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                                    <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                                </div>
+
+                                <h2 class="card-title">Website Development Activity</h2>
+                            </header>
+                            <div class="card-body">
+                                <div class="timeline timeline-simple mt-3 mb-3">
+                                    <div class="tm-body">
+                                        <div class="tm-title">
+                                            <h5 class="m-0 pt-2 pb-2 text-uppercase">November - December 2021</h5>
+                                        </div>
+                                        <ol class="tm-items">
+                                            <li>
+                                                <div class="tm-box">
+                                                    <p class="text-muted mb-0">Dashboard Integration</p>
+                                                    <p>
+                                                        Dashboard Integration using Arctype to query our SQL data. Hence visualizing and analyzing using Arctype's dashboard functionality to a perfect synergy.
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tm-box">
+                                                    <p class="text-muted mb-0">Backend Integration.</p>
+                                                    <p>
+                                                        Connecting database to Flexmonster to add data visualization components with python and Django Components
+                                                    </p>
+                                                    <!-- <div class="thumbnail-gallery">
+                                                        <a class="img-thumbnail lightbox" href="img/projects/project-4.jpg" data-plugin-options='{ "type":"image" }'>
+                                                            <img class="img-fluid" width="215" src="img/projects/project-4.jpg">
+                                                            <span class="zoom">
+																	<i class="bx bx-search"></i>
+																</span>
+                                                        </a>
+                                                    </div> -->
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="row pt-4 mt-1">
+                    <div class="col-xl-6">
+                        <section class="card card-transparent mb-3">
+                            <header class="card-header">
+                                <div class="card-actions">
+                                    <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                                    <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                                </div>
+
+                                <h2 class="card-title">Global Stats</h2>
+                            </header>
+                            <div class="card-body">
+                                <div id="vectorMapWorld" style="height: 350px; width: 100%;"></div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-xl-6">
+                        <section class="card">
+                            <header class="card-header card-header-transparent">
+                                <div class="card-actions">
+                                    <a href="#" class="card-action card-action-toggle" data-card-toggle></a>
+                                    <a href="#" class="card-action card-action-dismiss" data-card-dismiss></a>
+                                </div>
+
+                                <h2 class="card-title">Projects Stats</h2>
+                            </header>
+                            <div class="card-body">
+                                <table class="table table-responsive-md table-striped mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Development</th>
+                                            <th>Status</th>
+                                            <th>Progress</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Front End Development</td>
+                                            <td><span class="badge badge-success">Success</span></td>
+                                            <td>
+                                                <div class="progress progress-sm progress-half-rounded m-0 mt-1 light">
+                                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                                        100%
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Secured Authentication</td>
+                                            <td><span class="badge badge-success">Success</span></td>
+                                            <td>
+                                                <div class="progress progress-sm progress-half-rounded m-0 mt-1 light">
+                                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                                        100%
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Checkout Module </td>
+                                            <td><span class="badge badge-warning">Incomplete</span></td>
+                                            <td>
+                                                <div class="progress progress-sm progress-half-rounded m-0 mt-1 light">
+                                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                                        60%
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>AJAX INTERGRATION</td>
+                                            <td><span class="badge badge-success">Success</span></td>
+                                            <td>
+                                                <div class="progress progress-sm progress-half-rounded m-0 mt-1 light">
+                                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                                        90%
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>User Activities</td>
+                                            <td><span class="badge badge-warning">Incomplete</span></td>
+                                            <td>
+                                                <div class="progress progress-sm progress-half-rounded m-0 mt-1 light">
+                                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+                                                        45%
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Database with Arctype and Flexmonster</td>
+                                            <td><span class="badge badge-danger">Incomplete</span></td>
+                                            <td>
+                                                <div class="progress progress-sm progress-half-rounded m-0 mt-1 light">
+                                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                                        40%
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- end: page -->
+            </section>
+        </div>
+
+        <aside id="sidebar-right" class="sidebar-right">
+            <div class="nano">
+                <div class="nano-content">
+                    <a href="#" class="mobile-close d-md-none">
+							Collapse <i class="fas fa-chevron-right"></i>
+						</a>
+
+                    <div class="sidebar-right-wrapper">
+
+                        <div class="sidebar-widget widget-calendar">
+                            <h6>Upcoming Tasks</h6>
+                            <div data-plugin-datepicker data-plugin-skin="dark"></div>
+
+                            <ul>
+                                <li>
+                                    <time datetime="2021-04-19T00:00+00:00">No time set</time>
+                                    <span>Full Backend Integration</span>
+                                </li>
+                                <li>
+                                    <time datetime="2021-04-19T00:00+00:00">No time set</time>
+                                    <span>Full Dashboard Integration</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+    </section>
+
+    <!-- Vendor -->
+    <script src="{% static 'dash/vendor/jquery/jquery.js' %}"></script>
+    <script src="{% static 'dash/vendor/jquery-browser-mobile/jquery.browser.mobile.js' %}"></script>
+    <script src="{% static 'dash/vendor/jquery-cookie/jquery.cookie.js' %}"></script>
+    <script src="{% static 'dash/master/style-switcher/style.switcher.js' %}"></script>
+    <script src="{% static 'dash/vendor/popper/umd/popper.min.js' %}"></script>
+    <script src="{% static 'dash/vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="{% static 'dash/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js' %}"></script>
+    <script src="{% static 'dash/vendor/common/common.js' %}"></script>
+    <script src="{% static 'dash/vendor/nanoscroller/nanoscroller.js' %}"></script>
+    <script src="{% static 'dash/vendor/magnific-popup/jquery.magnific-popup.js' %}"></script>
+    <script src="{% static 'dash/vendor/jquery-placeholder/jquery.placeholder.js' %}"></script>
+
+    <!-- Specific Page Vendor -->
+    <script src="{% static 'dash/vendor/jquery-ui/jquery-ui.js' %}"></script>
+    <script src="vendor/jqueryui-touch-punch/jquery.ui.touch-punch.js' %}"></script>
+    <script src="{% static 'dash/vendor/jquery-appear/jquery.appear.js' %}"></script>
+    <script src="{% static 'dash/vendor/bootstrap-multiselect/js/bootstrap-multiselect.js' %}"></script>
+    <script src="{% static 'dash/vendor/jquery.easy-pie-chart/jquery.easypiechart.js' %}"></script>
+    <script src="{% static 'dash/vendor/flot/jquery.flot.js' %}"></script>
+    <script src="{% static 'dash/vendor/flot.tooltip/jquery.flot.tooltip.js' %}"></script>
+    <script src="{% static 'dash/vendor/flot/jquery.flot.pie.js' %}"></script>
+    <script src="{% static 'dash/vendor/flot/jquery.flot.categories.js' %}"></script>
+    <script src="{% static 'dash/vendor/flot/jquery.flot.resize.js' %}"></script>
+    <script src="{% static 'dash/vendor/jquery-sparkline/jquery.sparkline.js' %}"></script>
+    <script src="{% static 'dash/vendor/raphael/raphael.js' %}"></script>
+    <script src="{% static 'dash/vendor/morris/morris.js' %}"></script>
+    <script src="{% static 'dash/vendor/gauge/gauge.js' %}"></script>
+    <script src="{% static 'dash/vendor/snap.svg/snap.svg.js' %}"></script>
+    <script src="{% static 'dash/vendor/liquid-meter/liquid.meter.js' %}"></script>
+    <script src="{% static 'dash/vendor/jqvmap/jquery.vmap.js' %}"></script>
+    <script src="{% static 'dash/vendor/jqvmap/data/jquery.vmap.sampledata.js' %}"></script>
+    <script src="{% static 'dash/vendor/jqvmap/maps/jquery.vmap.world.js' %}"></script>
+    <script src="{% static 'dash/vendor/jqvmap/maps/continents/jquery.vmap.africa.js' %}"></script>
+    <script src="{% static 'dash/vendor/jqvmap/maps/continents/jquery.vmap.asia.js' %}"></script>
+    <script src="{% static 'dash/vendor/jqvmap/maps/continents/jquery.vmap.australia.js' %}"></script>
+    <script src="{% static 'dash/vendor/jqvmap/maps/continents/jquery.vmap.europe.js' %}"></script>
+    <script src="{% static 'dash/vendor/jqvmap/maps/continents/jquery.vmap.north-america.js' %}"></script>
+    <script src="{% static 'dash/vendor/jqvmap/maps/continents/jquery.vmap.south-america.js' %}"></script>
+
+
+    <!--(remove-empty-lines-end)-->
+
+    <!-- Theme Base, Components and Settings -->
+    <script src="{% static 'dash/js/theme.js' %}"></script>
+
+    <!-- Theme Custom -->
+    <script src="{% static 'dash/js/custom.js' %}"></script>
+
+    <!-- Theme Initialization Files -->
+    <script src="{% static 'dash/js/theme.init.js' %}"></script>
+    <!-- Analytics to Track Preview Website -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-42715764-8', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- Examples -->
+    <script src="{% static 'dash/js/examples/examples.dashboard.js' %}"></script>
+
+</body>
+
+</html>

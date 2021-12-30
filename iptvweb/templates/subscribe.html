@@ -1,0 +1,317 @@
+{% extends 'nav2.html' %} {% load static %} {% block content %}
+
+
+<div role="main" class="main shop pt-4">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <ul class="breadcrumb breadcrumb-style-2 d-block text-4 mb-4">
+                    <li><a href="#" class="text-color-default text-color-hover-primary text-decoration-none">Home</a></li>
+
+                    <li>Subscribe</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 mb-5 mb-md-0">
+
+                <div class="thumb-gallery-wrapper">
+                    <div class="thumb-gallery-detail owl-carousel owl-theme manual nav-inside nav-style-1 nav-dark mb-3">
+                        <div>
+                            <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}" data-zoom-image="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                        </div>
+                        <!-- <div>
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}" data-zoom-image="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div>
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}" data-zoom-image="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div>
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}" data-zoom-image="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div>
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}" data-zoom-image="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div>
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}" data-zoom-image="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div> -->
+                    </div>
+                    <!-- <div class="thumb-gallery-thumbs owl-carousel owl-theme manual thumb-gallery-thumbs">
+                                <div class="cur-pointer">
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div class="cur-pointer">
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div class="cur-pointer">
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div class="cur-pointer">
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                                <div class="cur-pointer">
+                                    <img alt="" class="img-fluid" src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %}">
+                                </div>
+                            </div> -->
+                </div>
+
+            </div>
+
+            <div class="col-md-7">
+
+                <div class="summary entry-summary position-relative">
+
+                    <div class="position-absolute top-0 right-0">
+                        <div class="products-navigation d-flex">
+                            <a href="{% url 'subscribe' %}" class="prev text-decoration-none text-color-dark text-color-hover-primary border-color-hover-primary" data-tooltip data-original-title="Gen+IPTV"><i class="fas fa-chevron-left"></i></a>
+                            <a href="{% url 'subscribe2' %}" class="next text-decoration-none text-color-dark text-color-hover-primary border-color-hover-primary" data-tooltip data-original-title="Premuim IPTV"><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <h1 class="mb-0 font-weight-bold text-7">Gen+ IPTV</h1>
+
+                    <div class="pb-0 clearfix d-flex align-items-center">
+                        <div title="Rated 3 out of 5" class="float-left">
+                            <input type="text" class="d-none" value="3" title="" data-plugin-star-rating data-plugin-options="{'displayOnly': true, 'color': 'primary', 'size':'xs'}">
+                        </div>
+
+                        <div class="review-num">
+                            <a href="#description" class="text-decoration-none text-color-default text-color-hover-primary" data-hash data-hash-offset="75" data-hash-trigger-click=".nav-link-reviews" data-hash-trigger-click-delay="1000">
+                                <span class="count text-color-inherit" itemprop="ratingCount">(2</span> reviews)
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="divider divider-small">
+                        <hr class="bg-color-grey-scale-4">
+                    </div>
+
+                    <p class="price mb-3">
+                        <span class="sale text-color-dark">Ksh 2,500</span>
+                        <span class="amount">Ksh 9,500</span>
+                    </p>
+
+                    <p class="text-3-5 mb-3">We are IPTVIntel,the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+
+                    <ul class="list list-unstyled text-2">
+                        <li class="mb-0">AVAILABILITY: <strong class="text-color-dark">AVAILABLE</strong></li>
+                        <li class="mb-0">SKU: <strong class="text-color-dark">1234567890</strong></li>
+                    </ul>
+
+
+                    <form enctype="multipart/form-data" method="post" class="cart" action="#">
+                        <!-- <table class="table table-borderless" style="max-width: 300px;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-middle text-2 px-0 py-2">SIZE:</td>
+                                            <td class="px-0 py-2">
+                                                <div class="custom-select-1">
+                                                    <select name="size" class="form-control text-1 h-auto py-2">
+															<option value="">PLEASE CHOOSE</option>
+															<option value="blue">Small</option>
+															<option value="red">Normal</option>
+															<option value="green">Big</option>
+														</select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle text-2 px-0 py-2">COLOR:</td>
+                                            <td class="px-0 py-2">
+                                                <div class="custom-select-1">
+                                                    <select name="color" class="form-control text-1 h-auto py-2">
+															<option value="">PLEASE CHOOSE</option>
+															<option value="blue">Blue</option>
+															<option value="red">Red</option>
+															<option value="green">Green</option>
+														</select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table> -->
+                        <hr>
+                        <!-- <div class="quantity quantity-lg">
+                                    <input type="button" class="minus text-color-hover-light bg-color-hover-primary border-color-hover-primary" value="-">
+                                    <input type="text" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
+                                    <input type="button" class="plus text-color-hover-light bg-color-hover-primary border-color-hover-primary" value="+">
+                                </div> -->
+                        <button type="submit" class="btn btn-dark btn-modern text-uppercase bg-color-hover-primary border-color-hover-primary">Subscribe</button>
+                        <hr>
+                    </form>
+
+                    <div class="d-flex align-items-center">
+                        <ul class="social-icons social-icons-medium social-icons-clean-with-border social-icons-clean-with-border-border-grey social-icons-clean-with-border-icon-dark mr-3 mb-0">
+                            <!-- Facebook -->
+                            <li class="social-icons-facebook">
+                                <a href="http://www.facebook.com/sharer.php?u=https://www.iptvintel.com" target="_blank" data-toggle="tooltip" data-placement="top" title="Share On Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <!-- Google+ -->
+
+                            <!-- Twitter -->
+                            <li class="social-icons-twitter">
+                                <a href="https://twitter.com/share?url=https://www.iptvintel.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank" data-toggle="tooltip" data-placement="top" title="Share On Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <!-- Email -->
+                            <li class="social-icons-email">
+                                <a href="mailto:?Subject=Share This Page&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://www.iptvintel.com" data-toggle="tooltip" data-placement="top" title="Share By Email">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="d-flex align-items-center text-decoration-none text-color-dark text-color-hover-primary font-weight-semibold text-2">
+                            <i class="far fa-heart mr-1"></i> SAVE TO WISHLIST
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col">
+                <div id="description" class="tabs tabs-simple tabs-simple-full-width-line tabs-product tabs-dark mb-2">
+                    <ul class="nav nav-tabs justify-content-start">
+                        <li class="nav-item active"><a class="nav-link active font-weight-bold text-3 text-uppercase py-2 px-3" href="#productDescription" data-toggle="tab">Description</a></li>
+                        <li class="nav-item"><a class="nav-link font-weight-bold text-3 text-uppercase py-2 px-3" href="#productInfo" data-toggle="tab">Additional Information</a></li>
+                        <li class="nav-item"><a class="nav-link nav-link-reviews font-weight-bold text-3 text-uppercase py-2 px-3" href="#productReviews" data-toggle="tab">Reviews (2)</a></li>
+                    </ul>
+                    <div class="tab-content p-0">
+                        <div class="tab-pane px-0 py-3 active" id="productDescription">
+                            <p>We are IPTVIntel,the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                            <p class="m-0">We are IPTVIntel,the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                        </div>
+                        <div class="tab-pane px-0 py-3" id="productInfo">
+                            <table class="table table-striped m-0">
+                                <tbody>
+                                    <tr>
+                                        <th class="border-top-0">
+                                            Number of Channels
+                                        </th>
+                                        <td class="border-top-0">
+                                            420
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Display
+                                        </th>
+                                        <td>
+                                            4k, HD, HDR, HDR+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Other
+                                        </th>
+                                        <td>
+                                            Antifreez technolology, no buffers
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane px-0 py-3" id="productReviews">
+                            <ul class="comments">
+                                <li>
+                                    <div class="comment">
+                                        <div class="img-thumbnail border-0 p-0 d-none d-md-block">
+                                            <img class="avatar rounded-circle" alt="" src="img/avatars/avatar-2.jpg">
+                                        </div>
+                                        <div class="comment-block">
+                                            <div class="comment-arrow"></div>
+                                            <span class="comment-by">
+															<strong>Jack Doe</strong>
+															<span class="float-right">
+																<div class="pb-0 clearfix">
+																	<div title="Rated 3 out of 5" class="float-left">
+																		<input type="text" class="d-none" value="3" title="" data-plugin-star-rating data-plugin-options="{'displayOnly': true, 'color': 'primary', 'size':'xs'}">
+																	</div>
+
+																	<div class="review-num">
+																		<span class="count" itemprop="ratingCount">2</span> reviews
+                                        </div>
+                                    </div>
+                                    </span>
+                                    </span>
+                                    <p>We are IPTVIntel,the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                        </div>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="comment">
+                            <div class="img-thumbnail border-0 p-0 d-none d-md-block">
+                                <img class="avatar rounded-circle" alt="" src="img/avatars/avatar.jpg">
+                            </div>
+                            <div class="comment-block">
+                                <div class="comment-arrow"></div>
+                                <span class="comment-by">
+															<strong>John Doe</strong>
+															<span class="float-right">
+																<div class="pb-0 clearfix">
+																	<div title="Rated 3 out of 5" class="float-left">
+																		<input type="text" class="d-none" value="3" title="" data-plugin-star-rating data-plugin-options="{'displayOnly': true, 'color': 'primary', 'size':'xs'}">
+																	</div>
+
+																	<div class="review-num">
+																		<span class="count" itemprop="ratingCount">2</span> reviews
+                            </div>
+                        </div>
+                        </span>
+                        </span>
+                        <p>We are IPTVIntel,the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                </div>
+            </div>
+            </li>
+            </ul>
+            <hr class="solid my-5">
+            <h4>Add a review</h4>
+            <div class="row">
+                <div class="col">
+
+                    <form action="" id="submitReview" method="post">
+                        <div class="form-row">
+                            <div class="form-group col pb-2">
+                                <label class="required font-weight-bold text-dark">Rating</label>
+                                <input type="number" class="rating-loading" value="0" title="" data-plugin-star-rating data-plugin-options="{'color': 'primary', 'size':'sm'}" maxlength="2">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-lg-6">
+                                <label class="required font-weight-bold text-dark">Name</label>
+                                <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" required>
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="required font-weight-bold text-dark">Email Address</label>
+                                <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <label class="required font-weight-bold text-dark">Review</label>
+                                <textarea maxlength="5000" data-msg-required="Please enter your review." rows="8" class="form-control" name="review" id="review" required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col mb-0">
+                                <input type="submit" value="Post Review" class="btn btn-primary btn-modern" data-loading-text="Loading...">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+{% endblock %}

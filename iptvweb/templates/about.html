@@ -1,0 +1,903 @@
+{% extends 'nav.html' %} {% load static %} {% block content %}
+
+<div role="main" class="main">
+    <section class="section section-concept section-no-border section-dark section-angled section-angled-reverse pt-5 m-0" id="section-concept" style="background-image: url({% static 'website/img/landing/header_bg2.jpg' %}); background-size: cover; background-position: center; animation-duration: 750ms; animation-delay: 300ms; animation-fill-mode: forwards;">
+        <div class="section-angled-layer-bottom bg-light" style="padding: 8rem 0;"></div>
+        <div class="container pt-5 mt-5">
+            <div class="row align-items-center pt-3">
+                <div class="col-lg-5 mb-5">
+                    <h5 class="text-primary font-weight-bold mb-1">IPTV intel</h5>
+                    <h1 class="font-weight-bold text-12 line-height-2 mb-3">The Best IPTV<span><span class="d-inline-block text-primary highlighted-word highlighted-word-rotate highlighted-word-animation-1 highlighted-word-animation-1-no-animate alternative-font-3 font-weight-bold text-1 ml-2">ever</span></span>
+                    </h1>
+                    <p class="custom-font-size-1">iptv intel is simply the best choice for your Entertainment. Stream your Favorite Shows and Watch Live Sports in 4K 100% no buffer. <a href="#intro" data-hash data-hash-offset="120" class="text-color-light font-weight-semibold text-1 d-block">VIEW MORE <i class="fa fa-long-arrow-alt-right ml-1"></i></a></p>
+                    <a class="video-open lightbox d-block text-color-light" href="#popup-content-1" data-trigger-play-video="#popupPresentation">
+                        <div class="video-open-icon"></div>See How It Works</a>
+
+                    <div id="popup-content-1" class="dialog dialog-lg zoom-anim-dialog rounded p-3 mfp-hide mfp-close-out">
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <video id="popupPresentation" class="float-left" width="100%" height="100%" muted playsinline loop preload="metadata" poster="video/presentation.jpg">
+                                        <source src="{% static 'website/video/video.mp4' %}" type="video/mp4">
+                                        <source src="{% static 'website/video/video.mp4' %}" type="video/mp4">
+                                  </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1 mb-5">
+                    <div class="position-relative border-width-10 border-color-light clearfix border border-radius" data-remove-min-height style="min-height: 446px;">
+                        <video id="presentation" class="float-left" width="100%" height="100%" muted playsinline loop preload="metadata" poster="video/presentation.jpg" data-auto-play="true">
+                                    <source src="{% static 'website/video/video.mp4' %}" type="video/mp4">
+                                    <source src="{% static 'website/video/video.mp4' %}" type="video/mp4">
+                              </video>
+                        <a href="#" class="position-absolute top-50pct left-50pct transform3dxy-n50 bg-light rounded-circle d-flex align-items-center justify-content-center text-decoration-none bg-color-hover-primary text-color-hover-light play-button-lg pulseAnim pulseAnimAnimated"
+                            data-trigger-play-video="#presentation" data-trigger-play-video-remove="yes">
+                            <i class="fas fa-play text-5"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-6 col-xl-5 custom-header-bar py-4 pr-5 z-index-2" style="background-color:#0088CC">
+                    <div>
+                        <div class="star-rating-wrap d-flex align-items-center justify-content-center position-relative text-dark text-5 py-2 mb-2">
+                            <i class="fas fa-star" style="color:gold"></i><i class="fas fa-star ml-1" style="color:gold"></i><i class="fas fa-star ml-1" style="color:gold"></i><i class="fas fa-star ml-1" style="color:gold"></i><i class="fas fa-star ml-1"
+                                style="color:gold"></i>
+                        </div>
+
+                        <h4 class="position-relative text-center font-weight-bold text-7 line-height-2 mb-0">Popular IPTV channels</h4>
+
+                        <p class="position-relative text-center font-weight-normal mb-1">* Used and Aproved by 40k users </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="intro" class="section section-no-border section-angled bg-light pt-0 pb-5 m-0">
+        <div class="section-angled-layer-bottom section-angled-layer-increase-angle bg-color-light-scale-1" style="padding: 21rem 0;"></div>
+        <div class="container pb-5" style="min-height: 1000px;">
+            <div class="row mb-5 pb-lg-3 counters">
+                <div class="col-lg-10 text-center offset-lg-1">
+                    <h2 class="font-weight-bold text-9 mb-0">The Perfect source of entertainment<br> for the whole family</h2>
+                    <p class="sub-title text-primary text-4 font-weight-semibold positive-ls-2 mt-2 mb-4">A NEW LEVEL <span class="highlighted-word highlighted-word-animation-1 highlighted-word-animation-1-2 highlighted-word-animation-1 highlighted-word-animation-1-no-rotate alternative-font-4 font-weight-semibold line-height-2 pb-2">FOR YOUR ENTERTAINMENT</span></p>
+                    <p class="text-1rem text-color-default negative-ls-05 pt-3 pb-4 mb-5">We are IPTVIntel,the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 offset-lg-2 counter mb-5 mb-md-0">
+                    <div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="750" data-appear-animation-duration="750">
+                        <h3 class="font-weight-extra-bold text-14 line-height-1 mb-2" data-to="80" data-append="+" data-plugin-options="{'accY': 50}">0</h3>
+                        <label class="font-weight-semibold negative-ls-1 text-color-dark mb-0">Included Channels</label>
+                        <p class="text-color-grey font-weight-semibold pb-1 mb-2">600+ channels worldwide</p>
+                        <p class="mb-0"><a href="#demos" data-hash data-hash-offset="120" class="text-color-primary d-flex align-items-center justify-content-center text-4 font-weight-semibold text-decoration-none">VIEW Channels<i class="fas fa-long-arrow-alt-right ml-2 text-4 mb-0"></i></a></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 counter divider-left-border">
+                    <div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="750" data-appear-animation-duration="750">
+                        <h3 class="font-weight-extra-bold text-14 line-height-1 mb-2" data-to="4" data-append="K+" data-plugin-options="{'accY': 50}">0</h3>
+                        <label class="font-weight-semibold negative-ls-1 text-color-dark mb-0">4K chennels to watch</label>
+                        <p class="text-color-grey font-weight-semibold pb-1 mb-2">100K+ IN ALL VERSIONS</p>
+                        <p class="mb-0"><a href="{% url 'subscribe' %}" class="text-color-primary d-flex align-items-center justify-content-center text-4 font-weight-semibold text-decoration-none" target="_blank">subscribe now! <i class="fas fa-long-arrow-alt-right ml-2 text-4 mb-0"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="intro row align-items-center justify-content-center justify-content-md-start">
+                <div class="col-3 pr-0 pl-3 z-index-2">
+                    <img src="{% static 'website/img/landing/intro2.jpg' %}" data-src="{% static 'website/img/landing/intro2.jpg' %}" class="lazyload img-fluid border border-width-10 border-color-light box-shadow-3 rounded d-none d-md-block appear-animation" alt="" data-appear-animation="fadeInUp"
+                        data-appear-animation-delay="600">
+                    <div class="position-absolute d-none d-md-flex align-items-end appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="900" style="bottom: -60px; right: -90px;">
+                        <span class="arrow hlt" style="margin-right: -70px;"></span>
+                        <strong class="text-color-dark mb-4 pb-3">ALL sports</strong>
+                    </div>
+                </div>
+                <div class="col-11 col-md-9 pl-0 pr-5 pb-5 pb-md-0 mb-5 mb-md-0">
+                    <div class="intro2 pt-5 pt-md-0 mt-5 mt-lg-0 appear-animation pr-5" data-appear-animation="fadeInUp" data-appear-animation-delay="400"><img src="{% static 'website/img/landing/intro2.jpg' %}" data-src="{% static 'website/img/landing/intro2.jpg' %}" class="lazyload img-fluid box-shadow-3 position-relative z-index-1 rounded" alt="" style="left: -110px;"></div>
+                    <div class="intro3 z-index-3 position-absolute appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="800" style="top: 20%; right: 4%;">
+                        <img src="{% static 'website/img/landing/intro1.jpg' %}" data-src="{% static 'website/img/landing/intro1.jpg' %}" class="lazyload img-fluid border border-width-10 border-color-light box-shadow-3 rounded" alt="">
+                        <div class="position-absolute d-none d-md-flex align-items-end appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1100" style="bottom: -135px; right: -20px;">
+                            <strong class="text-color-dark mb-3">Fantastic Actons!</strong>
+                            <span class="arrow hru"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-no-border pb-0 m-0">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-4">
+                    <h2 class="text-7 font-weight-semibold line-height-2 mb-2">Stream your Favorite Shows and Watch Live Sports in 4K</h2>
+                    <p>We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                </div>
+                <div class="col-sm-4 col-lg-auto icon-box text-center mb-4">
+                    <i class="icon-bg icon-1"></i>
+                    <h4 class="font-weight-bold custom-font-size-2 line-height-3 mb-0">100% no<br>buffer</h4>
+                </div>
+                <div class="col-sm-4 col-lg-auto icon-box text-center mb-4">
+                    <i class="icon-bg icon-2"></i>
+                    <h4 class="font-weight-bold custom-font-size-2 line-height-3 mb-0">Affordable<br> for all</h4>
+                </div>
+                <div class="col-sm-4 col-lg-auto icon-box text-center mb-4">
+                    <i class="icon-bg icon-3"></i>
+                    <h4 class="font-weight-bold custom-font-size-2 line-height-3 mb-0">600+ <br>channels for all worldwide</h4>
+                </div>
+                <div class="col-sm-12">
+                    <hr class="my-5">
+                    <h2 class="font-weight-bold text-center text-10 pt-3 mb-4">Next GEN IPTV CONNECTION</h2>
+                </div>
+                <div class="col-lg-8 offset-lg-2 px-lg-0 text-center">
+                    <p class="text-4">We are IPTVIntel, the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                </div>
+            </div>
+            <div class="image-wrapper position-relative z-index-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" data-appear-animation-duration="750" style="height: 0; padding-bottom: 16%;">
+                <img src="img/lazy.png" data-src="img/landing/theme_options.png" class="lazyload img-fluid" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-no-border section-angled section-dark pb-0 m-0" style="background-repeat: no-repeat; background-color: #0169fe !important;" data-src="img/landing/reason_bg.png">
+        <div class="section-angled-layer-top section-angled-layer-increase-angle bg-color-light-scale-1" style="padding: 4rem 0;"></div>
+        <div class="spacer py-md-4 my-md-5"></div>
+        <div class="container pt-5 mt-5">
+            <div class="row align-items-center pt-md-5 mt-5">
+                <div class="col-lg-6 offset-lg-1 mb-5">
+                    <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
+                        <img src="{% static 'website/img/slides/tv.png' %}" data-src="{% static 'website/img/slides/tv.png' %}" width="154" height="146" class="lazyload position-absolute top-auto" alt="6 reasons" data-plugin-float-element data-plugin-options="{'startPos': 'none', 'speed': 3, 'transition': true}"
+                            style="bottom: 184px; left: 70px;">
+                    </div>
+                    <div class="text-reasons">
+                        <label class="text-color-light appear-animation z-index-1" data-appear-animation="blurIn" data-appear-animation-delay="250" data-appear-animation-duration="750">6</label>
+                        <h3 class="text-4 text-md-6 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="450" data-appear-animation-duration="750">Reasons</h3>
+                        <h3 class="text-4 text-md-6 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="750" data-appear-animation-duration="750">Why you should choose</h3>
+                        <h3 class="text-4 text-md-6 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="950" data-appear-animation-duration="750"><span class="highlight-word light">IPTV intel</span></h3>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-xl-4 pl-lg-4 pl-xl-5 mb-5">
+                    <h2 class="text-6 font-weight-semibold line-height-2 mb-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1150" data-appear-animation-duration="750">With IPTV intel your satisfaction is guaranteed.</h2>
+                    <p class="custom-text-color-1 line-height-5 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1350" data-appear-animation-duration="750">We are IPTVIntel,the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-md-5 mb-4 pt-lg-4">
+                <div class="col-lg-11">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-sm-6 col-lg-4 image-box appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" data-appear-animation-duration="750">
+                            <img class="lazyload img-fluid" data-src="https://img.icons8.com/external-dreamstale-green-shadow-dreamstale/64/000000/external-technology-technology-dreamstale-green-shadow-dreamstale.png" src="https://img.icons8.com/external-dreamstale-green-shadow-dreamstale/64/000000/external-technology-technology-dreamstale-green-shadow-dreamstale.png"
+                            />
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="text-color-dark font-weight-extra-bold text-12 mr-2 line-height-1">1</span>
+                                <h4 class="d-flex flex-column font-weight-bold text-5 mb-0"><small class="font-weight-semibold positive-ls-2 line-height-1">Antifreeze </small>technology</h4>
+                            </div>
+                            <p class="pr-5 custom-text-color-1">Our services use the latest H264 technology, offering the best compression and quality. H264 technology helps us to provide AntiFreeze streaming to you.</p>
+                        </div>
+                        <div class="col-10 col-sm-6 col-lg-4 image-box appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800" data-appear-animation-duration="750">
+                            <img class="lazyload img-fluid" src="https://img.icons8.com/external-soft-fill-juicy-fish/64/000000/external-ssd-servers-and-networks-soft-fill-soft-fill-juicy-fish.png" />>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="text-color-dark font-weight-extra-bold text-12 mr-2 line-height-1">2</span>
+                                <h4 class="d-flex flex-column font-weight-bold text-5 mb-0"><small class="font-weight-semibold positive-ls-2 line-height-1">SSD </small>integration</h4>
+                            </div>
+                            <p class="pr-5 custom-text-color-1">With SSD integration, your streaming experience the best possible. Links are served up in high quality and available in 1080p HD+ and up to 4k.</p>
+                        </div>
+                        <div class="col-10 col-sm-6 col-lg-4 image-box appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000" data-appear-animation-duration="750">
+                            <img class="lazyload img-fluid" alt="#" src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-worldwide-advertising-kiranshastry-lineal-kiranshastry.png" />>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="text-color-dark font-weight-extra-bold text-12 mr-2 line-height-1">3</span>
+                                <h4 class="d-flex flex-column font-weight-bold text-5 mb-0"><small class="font-weight-semibold positive-ls-2 line-height-1">80k+ </small>TV channels.</h4>
+                            </div>
+                            <p class="pr-5 custom-text-color-1">We provide more than 80k+ TV channels. high quality streaming and available up to 4k screen resolutions. boosted with ssd and antifreeze technology.</p>
+                        </div>
+                        <div class="col-10 col-sm-6 col-lg-4 image-box appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="300" data-appear-animation-duration="750">
+                            <img class="lazyload img-fluid" alt="#" src="https://img.icons8.com/ios-filled/64/000000/last-24-hours.png" />>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="text-color-dark font-weight-extra-bold text-12 mr-2 line-height-1">4</span>
+                                <h4 class="d-flex flex-column font-weight-bold text-5 mb-0"><small class="font-weight-semibold positive-ls-2 line-height-1">24/7</small> Uptime</h4>
+                            </div>
+                            <p class="pr-5 custom-text-color-1">24/7 uptime and high quality servers provide most stability for your desired IPTV restream channels. Whatever, we assure 99.99% uptime at our streaming servers</p>
+                        </div>
+                        <div class="col-10 col-sm-6 col-lg-4 image-box appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" data-appear-animation-duration="750">
+                            <img class="lazyload img-fluid" alt="#" src="https://img.icons8.com/glyph-neue/64/000000/available-updates.png" />>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="text-color-dark font-weight-extra-bold text-12 mr-2 line-height-1">5</span>
+                                <h4 class="d-flex flex-column font-weight-bold text-5 mb-0"><small class="font-weight-semibold positive-ls-2 line-height-1">FREE</small>Updates & gifts</h4>
+                            </div>
+                            <p class="pr-5 custom-text-color-1">We usually update and add new TV Channels and VODs to the service. Once you subscribe you will receive all updates for free during your service And amazing loyalty gifts</p>
+                        </div>
+                        <div class="col-10 col-sm-6 col-lg-4 image-box appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700" data-appear-animation-duration="750">
+                            <img class="lazyload img-fluid" alt="#" src="https://img.icons8.com/external-those-icons-fill-those-icons/64/000000/external-switch-settings-those-icons-fill-those-icons-1.png" />>
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="text-color-dark font-weight-extra-bold text-12 mr-2 line-height-1">6</span>
+                                <h4 class="d-flex flex-column font-weight-bold text-5 mb-0"><small class="font-weight-semibold positive-ls-2 line-height-1">Instant </small>Activation</h4>
+                            </div>
+                            <p class="pr-5 custom-text-color-1">Instant Activation! get your streaming instant, after your order the service will be ready to get you a full access to all features.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="{% url 'subscribe' %}" class="btn btn-dark btn-rounded btn-modern btn-px-5 text-3 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300" target="_blank">Subscribe iptv NOW!</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-no-border section-angled bg-color-light-scale-1 m-0">
+        <div class="section-angled-layer-top section-angled-layer-increase-angle" style="padding: 5rem 0; background-color: #0169fe;"></div>
+        <div class="container py-5 my-5">
+            <div class="row align-items-center text-center my-5">
+                <div class="col-md-6">
+                    <h2 class="font-weight-bold text-9 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" data-appear-animation-duration="750">IPTV Intel</h2>
+                    <p class="font-weight-semibold text-primary text-4 fonts-weight-semibold positive-ls-2 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" data-appear-animation-duration="750">The best choice for your Entertainment</p>
+                    <p class="pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800" data-appear-animation-duration="750">We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                    <a href="{% url 'subscribe' %}" class="btn btn-modern btn-gradient btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000" data-appear-animation-duration="750" target="_blank">subscribe IPTV intel </a>
+                    <p class="appear-animation text-3" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">* We are IPTVIntel,<strong class="text-dark">the best on the planet</strong>, we always strive hard for perfection and your satisfaction.</p>
+                </div>
+                <div class="col-md-6 py-5">
+                    <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
+                        <!-- <img class="lazyload" src="{% static 'website/img/landing/intro2.jpg' %}" data-src="{% static 'website/img/landing/intro2.jpg' %}" alt="" width="149" height="142" style="position: absolute; top: -60px; right: -8%;"> -->
+                    </div>
+                    <div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="0" data-appear-animation-duration="750">
+                        <div>
+                            <img data-src="{% static 'website/img/slides/tv.png' %} " class="lazyload img-fluid border border-width-10 border-color-light rounded box-shadow-3 " alt=" " />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section border-0 section-dark section-angled section-angled-reverse section-funnel m-0 position-relative overflow-visible lazyload " style="background-image: url({% static 'website/img/landing/header_bg.jpg' %} ); background-size: 100%; background-position: top; background-repeat:
+                            no-repeat; " data-bg-src="{% static 'website/img/landing/header_bg.jpg' %} ">
+        <div class="section-angled-layer-top section-angled-layer-increase-angle " style="padding: 5rem 0; background-color: black "></div>
+        <svg version="1.1 " viewBox="500 200 600 900 " width="1920 " height="100% " xmlns="http://www.w3.org/2000/svg " class="background-svg-style-1 " style="top: 120px; ">
+                    <defs>
+                        <filter id="shadow " x="-300% " y="-300% " width="600% " height="600% ">
+                        <feDropShadow dx="0 " dy="0 " stdDeviation="10 10 " flood-color="#08c " radius="10 " flood-opacity="1 " />
+                        </filter>
+                    </defs>
+                    <path id="svg_17 " d="m1644.875212,897.875106l-1684.875221,-0.374889l1.25,-446.250108c-1.25,0.372765 496.124925,24.124892 496.124925,24.124892c0,0 255.000064,-106.250026 253.875257,-106.624912c1.124807,0.374885 129.874839,-2.125116
+                            128.750031,-2.500001c1.124808,0.374885 112.374836,-32.125123 111.250027,-32.500008c1.124809,0.374885 144.874844,21.62489 144.874844,21.62489c0,0 128.750032,-73.750018 127.625222,-74.124903c1.124811,0.374884 133.624844,9.124887
+                            133.624844,9.124887c0,0 108.750027,35.000009 108.750027,35.000009c0,0 178.750045,-125.000031 177.625231,-125.374915 " opacity="0.5 " stroke-opacity="null " stroke-width="0 " stroke="#191b1e " fill="#191b1e " fill-opacity="0.4 "/>
+                    <path id="svg_6 " d="m1663.83437,909.61168l-1704.94553,-0.72172l1.11111,-486.66724l648.88966,30.00004l105.55568,-41.11116l126.66682,1.11111l122.22236,-34.44449l126.66682,14.44447c0.49906,0.72171 126.05477,-64.83392 126.05477,-64.83392c0,0
+                            128.88904,4.44445 128.38998,3.72273c0.49906,0.72172 118.27698,28.49953 118.27698,28.49953c0,0 173.33353,-108.88902 172.83447,-109.61073 " stroke-opacity="null " stroke-width="0 " stroke="#1a1b1f " fill="#1a1b1f " fill-opacity="0.4 "/>
+                    <ellipse class="dots appear-animation " data-appear-animation="fadeIn " data-appear-animation-delay="250 " stroke="#000 " ry="3.5 " rx="3.5 " id="svg_9 " cy="453.023736 " cx="609.150561 " stroke-opacity="null " stroke-width="0
+                            " fill="#fff "/>
+                    <circle class="appear-animation " data-appear-animation="dotPulse " data-appear-animation-delay="2000 " stroke="#FFF " r="20 " id="svg_9 " cy="453.023736 " cx="609.150561 " stroke-opacity="null " stroke-width="0.2 " fill="none
+                            " style="transform-origin: 101.5% 50.4%; " />
+
+                    <ellipse class="dots appear-animation " data-appear-animation="fadeIn " data-appear-animation-delay="500 " stroke="#000 " ry="3.5 " rx="3.5 " id="svg_10 " cy="411.595173 " cx="715.341014 " stroke-opacity="null " stroke-width="0
+                            " fill="#fff "/>
+                    <circle class="appear-animation " data-appear-animation="dotPulse " data-appear-animation-delay="250 " stroke="#FFF " r="20 " id="svg_9 " cy="411.595173 " cx="715.341014 " stroke-opacity="null " stroke-width="0.2 " fill="none
+                            " style="transform-origin: 119.2% 45.7%; " />
+
+                    <ellipse class="dots appear-animation " data-appear-animation="fadeIn " data-appear-animation-delay="750 " stroke="#000 " ry="3.5 " rx="3.5 " id="svg_11 " cy="412.071364 " cx="841.05527 " stroke-opacity="null " stroke-width="0
+                            " fill="#fff "/>
+                    <circle class="appear-animation " data-appear-animation="dotPulse " data-appear-animation-delay="2000 " stroke="#FFF " r="20 " id="svg_9 " cy="412.071364 " cx="841.05527 " stroke-opacity="null " stroke-width="0.2 " fill="none
+                            " style="transform-origin: 140.1% 45.7%; " />
+
+                    <ellipse class="dots appear-animation " data-appear-animation="fadeIn " data-appear-animation-delay="1000 " stroke="#000 " ry="3.5 " rx="3.5 " id="svg_12 " cy="378.261847 " cx="964.388575 " stroke-opacity="null " stroke-width="0
+                            " fill="#fff "/>
+                    <circle class="appear-animation " data-appear-animation="dotPulse " data-appear-animation-delay="250 " stroke="#FFF " r="20 " id="svg_9 " cy="378.261847 " cx="964.388575 " stroke-opacity="null " stroke-width="0.2 " fill="none
+                            " style="transform-origin: 160.7% 42%; " />
+
+                    <ellipse class="dots appear-animation " data-appear-animation="fadeIn " data-appear-animation-delay="1250 " stroke="#000 " ry="3.5 " rx="3.5 " id="svg_13 " cy="391.595177 " cx="1090.102832 " stroke-opacity="null " stroke-width="0
+                            " fill="#fff "/>
+                    <circle class="appear-animation " data-appear-animation="dotPulse " data-appear-animation-delay="2000 " stroke="#FFF " r="20 " id="svg_9 " cy="391.595177 " cx="1090.102832 " stroke-opacity="null " stroke-width="0.2 " fill="none
+                            " style="transform-origin: 181.6% 43.5%; " />
+
+                    <ellipse class="dots appear-animation " data-appear-animation="fadeIn " data-appear-animation-delay="1500 " stroke="#000 " ry="3.5 " rx="3.5 " id="svg_14 " cy="327.706436 " cx="1216.769206 " stroke-opacity="null " stroke-width="0
+                            " fill="#fff "/>
+                    <circle class="appear-animation " data-appear-animation="dotPulse " data-appear-animation-delay="250 " stroke="#FFF " r="20 " id="svg_9 " cy="327.706436 " cx="1216.769206 " stroke-opacity="null " stroke-width="0.2 " fill="none
+                            " style="transform-origin: 202.8% 36.4%; " />
+
+                    <ellipse class="dots appear-animation " data-appear-animation="fadeIn " data-appear-animation-delay="1750 " stroke="#000 " ry="3.5 " rx="3.5 " id="svg_15 " cy="332.150871 " cx="1346.213343 " stroke-opacity="null " stroke-width="0
+                            " fill="#fff "/>
+                    <circle class="appear-animation " data-appear-animation="dotPulse " data-appear-animation-delay="2000 " stroke="#FFF " r="20 " id="svg_9 " cy="332.150871 " cx="1346.213343 " stroke-opacity="null " stroke-width="0.2 " fill="none
+                            " style="transform-origin: 224.3% 36.9%; " />
+
+                    <ellipse class="dots appear-animation " data-appear-animation="fadeIn " data-appear-animation-delay="2000 " stroke="#000 " ry="3.5 " rx="3.5 " id="svg_16 " cy="358.26192 " cx="1463.43529 " stroke-opacity="null " stroke-width="0
+                            " fill="#fff "/>
+                    <circle class="appear-animation " data-appear-animation="dotPulse " data-appear-animation-delay="250 " stroke="#FFF " r="20 " id="svg_9 " cy="358.26192 " cx="1463.43529 " stroke-opacity="null " stroke-width="0.2 " fill="none
+                            " style="transform-origin: 243.8% 39.8%; " />
+
+                    <ellipse class="dots appear-animation " data-appear-animation="fadeIn " data-appear-animation-delay="2250 " stroke="#000 " ry="3.5 " rx="3.5 " id="svg_7 " cy="278.817661 " cx="1589.546107 " stroke-opacity="null " stroke-width="0
+                            " fill="#fff "/>
+                    <circle class="appear-animation " data-appear-animation="dotPulse " data-appear-animation-delay="2000 " stroke="#FFF " r="20 " id="svg_9 " cy="278.817661 " cx="1589.546107 " stroke-opacity="null " stroke-width="0.2 " fill="none
+                            " style="transform-origin: 264.6% 30.9%; " />
+
+                    </g>
+                </svg>
+        <!-- <img class="img-fluid position-absolute d-none d-lg-block lazyload appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="300 " data-appear-animation-duration="750 " src="img/lazy.png " data-src="img/landing/porto_notebook.png "
+            alt=" " style="display: block; top: -170px; left: 90px; "> -->
+        <div class="container text-center py-5 mb-5 ">
+            <div class="row justify-content-center pb-md-5 mb-md-5 ">
+                <div class="col-md-7 offset-lg-5 pb-md-5 mb-md-5 ">
+                    <h2 class="font-weight-bold text-9 appear-animation mb-3 " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="200 " data-appear-animation-duration="750 ">Fast and affordable</h2>
+                    <p class="custom-text-color-1 color-inherit mb-4 pb-lg-2 appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="400 " data-appear-animation-duration="750 ">We are IPTVIntel,the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                </div>
+            </div>
+            <div class="row align-items-center pb-md-5 mb-md-5 ">
+                <div class="col-12 col-md-7 text-center mt-5 ">
+                    <h2 class="font-weight-bold text-7 text-md-6 text-lg-9 pt-5 pt-md-4 mt-5 mb-lg-3 mb-2 appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="200 " data-appear-animation-duration="750
+                            ">Works Perfectly on <span class="highlighted-word highlighted-word-animation-1 highlighted-word-animation-1-no-rotate alternative-font-4 font-weight-bold "> Any </span> Device!</h2>
+                    <p class="custom-text-color-1 color-inherit appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="400 " data-appear-animation-duration="750 ">We believe you will face lots of traffic from mobile device users not only from desktop or laptop users.IPTVIntel is the best solution for you, works fine on any screen resolutions and all other devices. Try IPTVIntel and see how it
+                        works!
+                    </p>
+                </div>
+                <div class="col-5 d-none d-md-block ">
+                    <div class="text-right mr-3 mr-lg-5 ml-auto mb-4 appear-animation " data-appear-animation="fadeInLeftShorter " data-appear-animation-delay="600 " data-appear-animation-duration="750 " style="max-width: 244px;
+                            " data-plugin-options="{ 'accY': -100} ">
+                        <!-- <img class="img-fluid lazyload " src="img/lazy.png " data-src="img/landing/porto_iphone.png " width="244 " height="228 " alt="Performance on Mobile "> -->
+                    </div>
+                    <!-- <img class="img-fluid appear-animation z-index-1 position-relative lazyload " data-appear-animation="fadeInRightShorter " data-appear-animation-delay="800 " data-appear-animation-duration="750 " src="img/lazy.png " data-src="img/landing/porto_ipad.png
+                            " width="437 " height="241 " alt=" " style="margin-bottom: -10% "> -->
+                </div>
+            </div>
+        </div>
+        <div class="section-funnel-layer-bottom ">
+            <div class="section-funnel-layer bg-light "></div>
+            <div class="section-funnel-layer bg-light "></div>
+        </div>
+    </section>
+
+    <section id="demos " class="section section-no-border section-light position-relative z-index-3 pt-0 m-0 ">
+        <div class="container ">
+            <div class="row align-items-center appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="250 " data-appear-animation-duration="750 ">
+                <div class="col-lg-8 offset-lg-2 text-center ">
+                    <ul class="list list-unstyled d-flex justify-content-center text-primary font-weight-semibold positive-ls-2 flex-column flex-md-row text-4 mb-4 ">
+                        <li>1.BUY SUBSCRIPTION</li>
+                        <li class="mx-5 ">2. LOG IN ANY DEVICE</li>
+                        <li>3. DONE</li>
+                    </ul>
+                    <p class="text-4 mb-5 appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="400 " data-appear-animation-duration="750 ">We are IPTVIntel,the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                    <p class="d-flex align-items-center justify-content-center font-weight-bold text-color-dark text-8 negative-ls-1 pb-3 mb-4 appear-animation " data-appear-animation="blurIn " data-appear-animation-delay="600 "><span class="highlighted-word
+                            highlighted-word-animation-1 highlighted-word-animation-1-2 highlighted-word-animation-1-2-dark highlighted-word-animation-1 highlighted-word-animation-1-no-rotate alternative-font-4 font-weight-extra-bold line-height-1 text-9
+                            mr-3 ">600+</span>4k Channels to watch</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid ">
+            <div class="py-4 bg-light left-0 z-index-3 w-100 " data-plugin-sticky data-plugin-options="{ 'minWidth': 991, 'padding': { 'top': 70}} ">
+                <div class="text-center appear-animation " data-appear-animation="fadeIn " data-appear-animation-delay="400 " data-appear-animation-duration="750 ">
+                    <ul class="nav nav-pills sort-source sort-source-style-3 justify-content-center mb-0 " data-sort-id="portfolio " data-option-key="filter " data-plugin-options="{ 'layoutMode': 'fitRows', 'filter': '*', 'useHash': false} ">
+                        <li class="nav-item  " data-option-value="* "><a class="nav-link custom-nav-link active " href="#demos " data-hash data-hash-offset="-200 ">Show All</a></li>
+                        <li class="nav-item " data-option-value=".new "><a class="nav-link custom-nav-link " href="#demos " data-hash data-hash-offset="-200 ">NEW</a></li>
+                        <li class="nav-item " data-option-value=".classic "><a class="nav-link custom-nav-link " href="#demos " data-hash data-hash-offset="-200 ">Classic</a></li>
+                        <li class="nav-item " data-option-value=".sports "><a class="nav-link custom-nav-link " href="#demos " data-hash data-hash-offset="-200 ">Sports</a></li>
+                        <li class="nav-item " data-option-value=".action "><a class="nav-link custom-nav-link " href="#demos " data-hash data-hash-offset="-200 ">action</a></li>
+                        <li class="nav-item active" data-option-value=".business "><a class="nav-link custom-nav-link " href="#demos " data-hash data-hash-offset="-200 ">Business</a></li>
+                        <li class="nav-item " data-option-value=".blog "><a class="nav-link custom-nav-link " href="#demos " data-hash data-hash-offset="-200 ">drama</a></li>
+                        <li class="nav-item " data-option-value=".portfolio "><a class="nav-link custom-nav-link " href="#demos " data-hash data-hash-offset="-200 ">documentary</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-list sort-destination sort-destination-margin sort-destination-items-hardware-acc overflow-visible mt-4 " data-sort-id="portfolio ">
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-1-5 isotope-item sports ">
+                    <div class="appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="200 " data-appear-animation-duration="750 ">
+                        <div class="portfolio-item hover-effect-1 text-center ">
+                            <span class="thumb-info thumb-info-no-zoom thumb-info-no-overlay thumb-info-no-bg ">
+                                            <span class="thumb-info-wrapper thumb-info-wrapper-demos thumb-info-wrapper-link lazyload m-0 " data-bg-src="{% static 'website/img/projects/project.jpg' %}">
+                                                <a href="#"></a>
+                                            </span>
+                            </span>
+                            <h5 class="text-color-dark text-capitalize mt-3 ">Bein</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-1-5 isotope-item sports ">
+                    <div class="appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="200 " data-appear-animation-duration="750 ">
+                        <div class="portfolio-item hover-effect-1 text-center ">
+                            <span class="thumb-info thumb-info-no-zoom thumb-info-no-overlay thumb-info-no-bg ">
+                                            <span class="thumb-info-wrapper thumb-info-wrapper-demos thumb-info-wrapper-link lazyload m-0 " data-bg-src="{% static 'website/img/projects/project-2.jpg' %} ">
+                                                <a href="#"></a>
+                                            </span>
+                            </span>
+                            <h5 class="text-color-dark text-capitalize mt-3 ">ESPN</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-1-5 isotope-item sports ">
+                    <div class="appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="200 " data-appear-animation-duration="750 ">
+                        <div class="portfolio-item hover-effect-1 text-center ">
+                            <span class="thumb-info thumb-info-no-zoom thumb-info-no-overlay thumb-info-no-bg ">
+                                            <span class="thumb-info-wrapper thumb-info-wrapper-demos thumb-info-wrapper-link lazyload m-0 " data-bg-src="{% static 'website/img/logos/nbatv.png' %}">
+                                                <a href="#"></a>
+                                            </span>
+                            </span>
+                            <h5 class="text-color-dark text-capitalize mt-3 ">NBA tv</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-1-5 isotope-item sports ">
+                    <div class="appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="200 " data-appear-animation-duration="750 ">
+                        <div class="portfolio-item hover-effect-1 text-center ">
+                            <span class="thumb-info thumb-info-no-zoom thumb-info-no-overlay thumb-info-no-bg ">
+                                            <span class="thumb-info-wrapper thumb-info-wrapper-demos thumb-info-wrapper-link lazyload m-0 " data-bg-src="{% static 'website/img/logos/NBC.png' %} ">
+                                                <a href="# "></a>
+                                            </span>
+                            </span>
+                            <h5 class="text-color-dark text-capitalize mt-3 ">NBC sports</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-1-5 isotope-item sports ">
+                    <div class="appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="200 " data-appear-animation-duration="750 ">
+                        <div class="portfolio-item hover-effect-1 text-center ">
+                            <span class="thumb-info thumb-info-no-zoom thumb-info-no-overlay thumb-info-no-bg ">
+                                            <span class="thumb-info-wrapper thumb-info-wrapper-demos thumb-info-wrapper-link lazyload m-0 " data-bg-src="{% static 'website/img/logos/foxsp.png' %}">
+                                                <a href="#"></a>
+                                            </span>
+                            </span>
+                            <h5 class="text-color-dark text-capitalize mt-3 ">Fox sports</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-1-5 isotope-item business ">
+                    <div class="appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="200 " data-appear-animation-duration="750 ">
+                        <div class="portfolio-item hover-effect-1 text-center ">
+                            <span class="thumb-info thumb-info-no-zoom thumb-info-no-overlay thumb-info-no-bg ">
+                                            <span class="thumb-info-wrapper thumb-info-wrapper-demos thumb-info-wrapper-link lazyload m-0 " data-bg-src="{% static 'website/img/logos/abc.png' %}">
+                                                <a href="#"></a>
+                                            </span>
+                            </span>
+                            <h5 class="text-color-dark text-capitalize mt-3 ">abc</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-1-5 isotope-item business ">
+                    <div class="appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="200 " data-appear-animation-duration="750 ">
+                        <div class="portfolio-item hover-effect-1 text-center ">
+                            <span class="thumb-info thumb-info-no-zoom thumb-info-no-overlay thumb-info-no-bg ">
+                                            <span class="thumb-info-wrapper thumb-info-wrapper-demos thumb-info-wrapper-link lazyload m-0 " data-bg-src="{% static 'website/img/logos/thecw.jpg' %}">
+                                                <a href="index-corporate-5.html "></a>
+                                            </span>
+                            </span>
+                            <h5 class="text-color-dark text-capitalize mt-3 ">The cw</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-1-5 isotope-item business ">
+                    <div class="appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="200 " data-appear-animation-duration="750 ">
+                        <div class="portfolio-item hover-effect-1 text-center ">
+                            <span class="thumb-info thumb-info-no-zoom thumb-info-no-overlay thumb-info-no-bg ">
+                                            <span class="thumb-info-wrapper thumb-info-wrapper-demos thumb-info-wrapper-link lazyload m-0 " data-bg-src="{% static 'website/img/logos/hbo.jpg' %}">
+                                                <a href="index-corporate-6.html "></a>
+                                            </span>
+                            </span>
+                            <h5 class="text-color-dark text-capitalize mt-3 ">HBO</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-1-5 isotope-item business ">
+                    <div class="appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="200 " data-appear-animation-duration="750 ">
+                        <div class="portfolio-item hover-effect-1 text-center ">
+                            <span class="thumb-info thumb-info-no-zoom thumb-info-no-overlay thumb-info-no-bg ">
+                                            <span class="thumb-info-wrapper thumb-info-wrapper-demos thumb-info-wrapper-link lazyload m-0 " data-bg-src="{% static 'website/img/logos/cbs.jpg' %}">
+                                                <a href="index-corporate-7.html "></a>
+                                            </span>
+                            </span>
+                            <h5 class="text-color-dark text-capitalize mt-3 ">CBS</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3 col-xl-1-5 isotope-item business ">
+                    <div class="appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="200 " data-appear-animation-duration="750 ">
+                        <div class="portfolio-item hover-effect-1 text-center ">
+                            <span class="thumb-info thumb-info-no-zoom thumb-info-no-overlay thumb-info-no-bg ">
+                                            <span class="thumb-info-wrapper thumb-info-wrapper-demos thumb-info-wrapper-link lazyload m-0 " data-bg-src="{% static 'website/img/logos/fx.jpg' %} ">
+                                                <a href="index-corporate-8.html "></a>
+                                            </span>
+                            </span>
+                            <h5 class="text-color-dark text-capitalize mt-3 ">FX</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-sm-6 col-md-4 col-lg-3 col-xl-1-5 isotope-item portfolio creative ">
+                    <div class="appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="200 " data-appear-animation-duration="750 ">
+                        <div class="portfolio-item hover-effect-1 text-center ">
+
+                            <div class="owl-carousel nav-dark show-nav-hover " data-plugin-options="{ 'items': 1, 'loop': true, 'nav': true, 'dots': false, 'autoplay': true, 'autoplayTimeout': 3000, 'autoplayHoverPause': true} ">
+                                <span class="thumb-info thumb-info-no-zoom thumb-info-no-overlay thumb-info-no-bg ">
+                                                <span class="thumb-info-wrapper thumb-info-wrapper-demos thumb-info-wrapper-link lazyload m-0 " data-bg-src="img/previews/preview-resume.jpg ">
+                                                    <a href="demo-resume.html "></a>
+                                                </span>
+                                </span>
+
+                                <span class="thumb-info thumb-info-no-zoom thumb-info-no-overlay thumb-info-no-bg ">
+                                                <span class="thumb-info-wrapper thumb-info-wrapper-demos thumb-info-wrapper-link lazyload m-0 " data-bg-src="img/previews/preview-resume-blue.jpg ">
+                                                    <a href="demo-resume-blue.html "></a>
+                                                </span>
+                                </span>
+
+                                <span class="thumb-info thumb-info-no-zoom thumb-info-no-overlay thumb-info-no-bg ">
+                                                <span class="thumb-info-wrapper thumb-info-wrapper-demos thumb-info-wrapper-link lazyload m-0 " data-bg-src="img/previews/preview-resume-red.jpg ">
+                                                    <a href="demo-resume-red.html "></a>
+                                                </span>
+                                </span>
+
+                                <span class="thumb-info thumb-info-no-zoom thumb-info-no-overlay thumb-info-no-bg ">
+                                                <span class="thumb-info-wrapper thumb-info-wrapper-demos thumb-info-wrapper-link lazyload m-0 " data-bg-src="img/previews/preview-resume-green.jpg ">
+                                                    <a href="demo-resume-green.html "></a>
+                                                </span>
+                                </span>
+
+                                <span class="thumb-info thumb-info-no-zoom thumb-info-no-overlay thumb-info-no-bg ">
+                                                <span class="thumb-info-wrapper thumb-info-wrapper-demos thumb-info-wrapper-link lazyload m-0 " data-bg-src="img/previews/preview-resume-dark.jpg ">
+                                                    <a href="demo-resume-dark.html "></a>
+                                                </span>
+                                </span>
+
+                            </div>
+
+                            <h5 class="text-color-dark text-capitalize mt-3 ">IPTV intel</h5>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+                <!-- <div class="col-sm-6 col-md-4 col-lg-3 col-xl-1-5 isotope-item business ">
+                    <div class="appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="200 " data-appear-animation-duration="750 ">
+                        <div class="portfolio-item hover-effect-1 text-center ">
+                            <span class="thumb-info thumb-info-no-zoom thumb-info-no-overlay thumb-info-no-bg ">
+                                            <span class="thumb-info-wrapper thumb-info-wrapper-demos thumb-info-wrapper-link lazyload m-0 " data-bg-src="img/previews/preview-hotel.jpg ">
+                                                <a href="demo-hotel.html "></a>
+                                            </span>
+                            </span>
+                            <h5 class="text-color-dark text-capitalize mt-3 ">IPTVIntel</h5>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-angled section-angled-reverse border-0 m-0 bg-dark section-dark " style="background-size: 100%; background-position: top; " data-bg-src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %} ">
+        <div class="section-angled-layer-top section-angled-layer-increase-angle bg-light " style="padding: 4rem 0; "></div>
+        <div class="container py-5 mt-5 ">
+            <div class="row align-items-center mt-4 pt-2 ">
+                <div class="col-lg-6 pr-lg-5 position-relative text-center mb-5 mb-lg-0 ">
+                    <img alt="# " src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %} " data-src="{% static 'website/img/slides/slide-corporate-1-1.jpg' %} " class="img-fluid lazyload appear-animation " data-appear-animation="fadeInRightShorter
+                            " data-appear-animation-delay="300 " />
+                </div>
+                <div class="col-lg-5 text-center px-lg-0 ">
+                    <h5 class="text-primary font-weight-semibold positive-ls-2 text-4 mb-2 appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="250 " data-appear-animation-duration="750 ">Next Gen IPTV </h5>
+                    <h2 class="font-weight-bold text-9 mb-2 appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="600 " data-appear-animation-duration="750 ">The best choice for your Entertainment</h2>
+                    <p class="custom-text-color-1 color-inherit appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="800 " data-appear-animation-duration="750 ">We are IPTVIntel,the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                    <p class="custom-text-color-1 color-inherit pb-2 mb-4 appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="1000 " data-appear-animation-duration="750 ">We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+                    <div class="d-flex align-items-center justify-content-center ">
+                        <i class="fa fa-check text-color-primary bg-light rounded-circle p-2 mr-3 appear-animation " data-appear-animation="fadeInRightShorter " data-appear-animation-delay="1600 " data-appear-animation-duration="750 "></i>
+                        <p class="mb-0 line-height-5 ls-0 text-color-light font-weight-semibold appear-animation " data-appear-animation="fadeInRightShorter " data-appear-animation-delay="1300 " data-appear-animation-duration="750 ">antifreez technolology</p>
+                        <i class="fa fa-check text-color-primary bg-light rounded-circle p-2 mr-3 appear-animation " data-appear-animation="fadeInRightShorter " data-appear-animation-delay="1600 " data-appear-animation-duration="750 "></i>
+                        <p class="mb-0 line-height-5 ls-0 text-color-light font-weight-semibold appear-animation " data-appear-animation="fadeInRightShorter " data-appear-animation-delay="1300 " data-appear-animation-duration="750 ">no buffers</p>
+                        <i class="fa fa-check text-color-primary bg-light rounded-circle p-2 mr-3 appear-animation " data-appear-animation="fadeInRightShorter " data-appear-animation-delay="1600 " data-appear-animation-duration="750 "></i>
+                        <p class="mb-0 line-height-5 ls-0 text-color-light font-weight-semibold appear-animation " data-appear-animation="fadeInRightShorter " data-appear-animation-delay="1300 " data-appear-animation-duration="750 "> 4k, HD, HDR, HDR+ </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-funnel border-0 bg-light lazyload m-0 " style="background-size: 100%; background-repeat: no-repeat; background-position: top; " data-bg-src="img/landing/half_circle.png ">
+        <div class="container text-center pb-5 mt-3 mb-5 ">
+            <h2 class="font-weight-bold text-9 mb-2 appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="250 ">IPTV intel</h2>
+            <h5 class="text-primary font-weight-semibold positive-ls-2 text-4 mb-3 appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="400 ">The best choice for your Entertainment</h5>
+            <p class="text-4 mb-0 appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="550 ">We are IPTVIntel, the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</p>
+            <!-- <div class="row flex-column flex-lg-row justify-content-center align-items-center my-5 ">
+                        <div class="col-8 col-md-5 col-lg-3 image-box mb-4 mb-lg-0 appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="600 " data-appear-animation-duration="750 ">
+                            <div class="image mb-3 ">
+                                <img alt="Layouts " width="195 " height="161 " src="img/lazy.png " data-src="img/landing/porto_layouts1.png " class="position-relative z-index-3 lazyload mr-auto " style="width: 67.47%; left: -51px; ">
+                                <img alt="Layouts " width="174 " height="161 " src="img/lazy.png " data-src="img/landing/porto_layouts3.png " class="position-relative z-index-1 lazyload ml-auto " style="width: 60.2%; margin-top: -32%; right: -50px; ">
+                                <img alt="Layouts " width="174 " height="161 " src="img/lazy.png " data-src="img/landing/porto_layouts3.png " class="position-relative z-index-2 lazyload mx-auto " style="width: 60.2%; margin-top: -13%; ">
+                            </div>
+                            <h4 class="text-dark font-weight-bold pt-2 mb-1 ">IPTV intel</h4>
+                            <p class="fs-md text-3 px-lg-4 "><br></p>
+                        </div>
+                        <div class="col-8 col-md-5 col-lg-3 image-box mb-4 mb-lg-0 appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="800 " data-appear-animation-duration="750 ">
+                            <div class="image mb-3 ">
+                                <img alt="Sidebars " width="172 " height="161 " src="img/lazy.png " data-src="img/landing/porto_sidebars1.png " class="position-relative z-index-1 lazyload ml-auto " style="right: -33px; ">
+                                <img alt="Sidebars " width="172 " height="161 " src="img/lazy.png " data-src="img/landing/porto_sidebars2.png " class="position-relative z-index-2 lazyload " style="left: -19px; margin-top: -32%; ">
+                                <img alt="Sidebars " width="172 " height="161 " src="img/lazy.png " data-src="img/landing/porto_sidebars3.png " class="position-relative z-index-3 lazyload ml-auto " style="right: -20px; margin-top: -13%; ">
+                            </div>
+                            <h4 class="text-dark font-weight-bold pt-2 mb-1 ">Sidebars</h4>
+                            <p class="fs-md text-3 px-lg-4 ">Sidebar can be set to be on left, right, both or even disabled.</p>
+                        </div>
+                        <div class="col-8 col-md-5 col-lg-3 image-box appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="1000 " data-appear-animation-duration="750 ">
+                            <div class="image mb-3 ">
+                                <img alt="Sliders " width="142 " height="161 " src="img/lazy.png " data-src="img/landing/porto_sliders1.png " class="position-relative z-index-1 lazyload " style="left: -31px; ">
+                                <img alt="Sliders " width="142 " height="161 " src="img/lazy.png " data-src="img/landing/porto_sliders2.png " class="position-relative z-index-2 lazyload ml-auto " style="right: -60px; margin-top: -31% ">
+                                <img alt="Sliders " width="142 " height="161 " src="img/lazy.png " data-src="img/landing/porto_sliders3.png " class="position-relative z-index-3 lazyload ml-auto " style="margin-right: 15%; margin-top: -41%; ">
+                                <img alt="Sliders " width="142 " height="161 " src="img/lazy.png " data-src="img/landing/porto_sliders4.png " class="position-relative z-index-4 lazyload " style="left: -50px; margin-top: -35.67%; ">
+                            </div>
+                            <h4 class="text-dark font-weight-bold pt-2 mb-1 ">Sliders</h4>
+                            <p class="fs-md text-3 px-lg-4 ">You can set several different types of sliders, boxed, full, grid, etc..</p>
+                        </div>
+                    </div>-->
+        </div>
+        <div class="section-funnel-layer-bottom ">
+            <div class="section-funnel-layer bg-color-light-scale-1 "></div>
+            <div class="section-funnel-layer bg-color-light-scale-1 "></div>
+        </div>
+    </section>
+
+    <section class="section section-funnel position-relative border-0 pt-0 m-0 ">
+        <div class="container pb-5 mb-5 ">
+            <h2 class="fotn-weight-extra-bold mb-1 text-center ">
+                <b class="text-13 d-block line-height-1 font-weight-extra-bold appear-animation " data-appear-animation="blurIn " data-appear-animation-delay="250 " data-appear-animation-duration="750 ">4K+</b>
+                <span class="font-weight-bold text-5 appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="600 " data-appear-animation-duration="750 ">4K chennels to watch</span>
+            </h2>
+            <p class="font-weight-bold text-4 text-center appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="750 ">600K+ channels to watch</p>
+            <div class="appear-animation " data-appear-animation="fadeInUpShorter " data-appear-animation-delay="850 " data-appear-animation-duration="850 ">
+                <h5 class="font-weight-semibold positive-ls-2 text-4 text-primary text-center mb-0 ">TOP 5 STAR RATING</h5>
+                <p class="text-default text-center mb-4 ">Real people, real stories. Hear from other users.</p>
+
+                <div class="owl-carousel carousel-center-active-item-2 nav-style-4 mb-4 pb-3 " data-plugin-options="{ 'items': 1, 'loop': true, 'nav': true, 'dots': false} ">
+                    <div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-4 ">
+                            <div class="author ">
+                                <h4 class="text-5 mb-0 ">Nairobi</h4>
+                                <span class="opacity-7 ">Ben</span>
+                            </div>
+                            <span class="star-rating ">
+                                        <i class="fas fa-star text-color-dark "></i>
+                                        <i class="fas fa-star text-color-dark "></i>
+                                        <i class="fas fa-star text-color-dark "></i>
+                                        <i class="fas fa-star text-color-dark "></i>
+                                        <i class="fas fa-star text-color-dark "></i>
+                                    </span>
+                        </div>
+                        <p class="mb-0 ">"This service is pure joy. The clarity and consistency is great! "</p>
+                    </div>
+                    <div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-4 ">
+                            <div class="author ">
+                                <h4 class="text-5 mb-0 ">Nairobi</h4>
+                                <span class="opacity-7 ">Mercy</span>
+                            </div>
+                            <span class="star-rating ">
+                                        <i class="fas fa-star text-color-dark "></i>
+                                        <i class="fas fa-star text-color-dark "></i>
+                                        <i class="fas fa-star text-color-dark "></i>
+                                        <i class="fas fa-star text-color-dark "></i>
+                                        <i class="fas fa-star text-color-dark "></i>
+                                    </span>
+                        </div>
+                        <p class="mb-0 ">"This service is pure joy. The clarity and consistency is great! "</p>
+                    </div>
+                    <div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-4 ">
+                            <div class="author ">
+                                <h4 class="text-5 mb-0 ">Kampala</h4>
+                                <span class="opacity-7 ">Dan</span>
+                            </div>
+                            <span class="star-rating ">
+                                        <i class="fas fa-star text-color-dark "></i>
+                                        <i class="fas fa-star text-color-dark "></i>
+                                        <i class="fas fa-star text-color-dark "></i>
+                                        <i class="fas fa-star text-color-dark "></i>
+                                        <i class="fas fa-star text-color-dark "></i>
+                                    </span>
+                        </div>
+                        <p class="mb-0 ">"This iptv continues to blow my mind! I can 't believe how good the service is...thank you"</p>
+                    </div>
+                    <div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                            <div class="author">
+                                <h4 class="text-5 mb-0">Nairobi</h4>
+                                <span class="opacity-7">S.Njoroge</span>
+                            </div>
+                            <span class="star-rating">
+                                        <i class="fas fa-star text-color-dark"></i>
+                                        <i class="fas fa-star text-color-dark"></i>
+                                        <i class="fas fa-star text-color-dark"></i>
+                                        <i class="fas fa-star text-color-dark"></i>
+                                        <i class="fas fa-star text-color-dark"></i>
+                                    </span>
+                        </div>
+                        <p class="mb-0">"The best iptv ever !!!!"</p>
+                    </div>
+                    <div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                            <div class="author">
+                                <h4 class="text-5 mb-0">Nairobi</h4>
+                                <span class="opacity-7">Makau</span>
+                            </div>
+                            <span class="star-rating">
+                                        <i class="fas fa-star text-color-dark"></i>
+                                        <i class="fas fa-star text-color-dark"></i>
+                                        <i class="fas fa-star text-color-dark"></i>
+                                        <i class="fas fa-star text-color-dark"></i>
+                                        <i class="fas fa-star text-color-dark"></i>
+                                    </span>
+                        </div>
+                        <p class="mb-0">" I like it because it has many options and the quality is amazing."</p>
+                    </div>
+                    <div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                            <div class="author">
+                                <h4 class="text-5 mb-0">Dodoma</h4>
+                                <span class="opacity-7">Philip</span>
+                            </div>
+                            <span class="star-rating">
+                                        <i class="fas fa-star text-color-dark"></i>
+                                        <i class="fas fa-star text-color-dark"></i>
+                                        <i class="fas fa-star text-color-dark"></i>
+                                        <i class="fas fa-star text-color-dark"></i>
+                                        <i class="fas fa-star text-color-dark"></i>
+                                    </span>
+                        </div>
+                        <p class="mb-0">"Very impressed with the great customer support."</p>
+                    </div>
+
+                    <div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                            <div class="author">
+                                <h4 class="text-5 mb-0">Nairobi</h4>
+                                <span class="opacity-7">George</span>
+                            </div>
+                            <span class="star-rating">
+                                        <i class="fas fa-star text-color-dark"></i>
+                                        <i class="fas fa-star text-color-dark"></i>
+                                        <i class="fas fa-star text-color-dark"></i>
+                                        <i class="fas fa-star text-color-dark"></i>
+                                        <i class="fas fa-star text-color-dark"></i>
+                                    </span>
+                        </div>
+                        <p class="mb-0">"Good code quality ! Very fast and good support ! I recommended it in 100% !"</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center mb-5"><a class="btn btn-dark btn-modern btn-rounded btn-px-5 btn-py-3 text-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="250" data-appear-animation-duration="600" href="#" target="_blank">Get IPTV NOW</a></p>
+        </div>
+
+    </section>
+
+    <section id="support" class="section section-angled bg-light border-0 m-0 position-relative pt-0">
+        <div class="container pb-5 mb-5">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 pr-xl-5 mb-5 mb-lg-0">
+                    <h2 class="font-weight-bold text-9 mb-1">Professional Support</h2>
+                    <h5 class="font-weight-semibold positive-ls-2 text-4 text-primary mb-3">Issue 1</h5>
+                    <p class="ls-0 text-default fw-400 mb-5">Any problem while using IPTV intel? We're here to help you.</p>
+                    <div class="d-flex align-items-center border border-top-0 border-right-0 border-left-0 pb-4 mb-4">
+                        <i class="fa fa-check text-color-primary bg-light rounded-circle box-shadow-4 p-2 mr-3"></i>
+                        <p class="mb-0"><b class="text-color-dark">Professional Support-</b> Any problem while using IPTV intel? We're here to help you.</p>
+                    </div>
+                    <div class="d-flex align-items-center border border-top-0 border-right-0 border-left-0 pb-4 mb-4">
+                        <i class="fa fa-check text-color-primary bg-light rounded-circle box-shadow-4 p-2 mr-3"></i>
+                        <p class="mb-0 mb-0 opacity-5"><b class="text-color-dark">Professional Support -</b> Any problem while using IPTV intel? We're here to help you.</p>
+                    </div>
+                    <div class="d-flex align-items-center pb-4 mb-4">
+                        <i class="fa fa-check text-color-primary bg-light rounded-circle box-shadow-4 p-2 mr-3"></i>
+                        <p class="mb-0"><b class="text-color-dark">Professional Support -</b> Any problem while using IPTV intel? We're here to help you.</p>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 offset-lg-2">
+                    <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
+                        <img class="img-fluid lazyload" src="img/lazy.png" data-src="img/landing/porto_dots2.png" alt="" style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
+                    </div>
+                    <img alt="iptv intel Support" src="img/lazy.png" data-src="img/landing/support_login.jpg" class="img-fluid border border-width-10 border-color-light rounded box-shadow-3 lazyload ml-5 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="200"
+                        style="width: 590px; max-width: none;">
+                    <img alt="iptv intel Documentation" src="img/lazy.png" data-src="img/landing/porto_docs.jpg" class="img-fluid lazyload rounded box-shadow-3 position-absolute appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="700" style="left: -100px; bottom: 50px;">
+
+                </div> -->
+            </div>
+        </div>
+        <!-- <div class="section-angled-layer-bottom section-angled-layer-increase-angle" style="padding: 4rem 0; background: #222529;"></div> -->
+    </section>
+
+    <section class="section section-dark section-angled border-0 lazyload pb-0 m-0" style="background-size: 100%; background-position: top;" data-bg-src="img/landing/build_bg.jpg">
+        <div class="section-angled-layer-top section-angled-layer-increase-angle bg-color-light-scale-1" style="padding: 4rem 0;"></div>
+        <div class="container text-center my-5 py-5">
+            <h2 class="font-weight-bold line-height-3 text-12 mt-5 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250" data-appear-animation-duration="750">Get the Next Gen IPTV</h2>
+            <h4 class="font-weight-bold text-9 mb-4 pb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" data-appear-animation-duration="750">Subscribe now. Only <span class="highlighted-word highlighted-word-animation-1 highlighted-word-animation-1-no-rotate highlighted-word-animation-1 highlighted-word-animation-1-light alternative-font-4 font-weight-extra-bold text-4 light appear-animation"
+                    data-appear-animation="blurIn" data-appear-animation-delay="800" data-appear-animation-duration="750">Ksh 2,500</span></h4>
+            <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900" data-appear-animation-duration="750">
+                <h4 class="font-weight-light text-4 col-lg-6 px-0 offset-lg-3 fw-400 mb-5 opacity-8">We are IPTVIntel, the best on the planet, we always strive hard for perfection and your satisfaction. We give you the stability and reliability of the service. Get the next GEN+ IPTV.</h4>
+            </div>
+            <div class="col-12 px-0 pb-2 mb-4">
+                <div class="row flex-column flex-lg-row justify-content-center">
+                    <div class="col-auto">
+                        <h5 class="font-weight-semibold text-4 positive-ls-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1100" data-appear-animation-duration="750"><i class="fa fa-check"></i> Antifreez Technolology</h5>
+                    </div>
+                    <div class="col-auto mx-5 my-2 my-lg-0">
+                        <h5 class="font-weight-semibold text-4 positive-ls-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1400" data-appear-animation-duration="750"><i class="fa fa-check"></i> 600+ Channels available</h5>
+                    </div>
+                    <div class="col-auto">
+                        <h5 class="font-weight-semibold text-4 positive-ls-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1600" data-appear-animation-duration="750"><i class="fa fa-check"></i> Free Lifetime Updates</h5>
+                    </div>
+                </div>
+            </div>
+            <a href="{% url 'subscribe' %}" class="btn btn-dark btn-modern btn-rounded px-5 btn-py-3 text-4 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="1800" data-appear-animation-duration="750" target="_blank">Subscribe NOW</a>
+        </div>
+        <div class="row border border-left-0 border-bottom-0 border-right-0 border-color-light-2">
+            <div class="col-6 col-md-3 text-center d-flex align-items-center justify-content-center py-4">
+                <a href="#" class="text-decoration-none" target="_blank">
+                    <div class="icon-box">
+                        <i class="icon-bg icon-menu-1"></i>
+                        <h4 class="text-4 mb-0">Channel Showcase<small class="d-block p-relative bottom-4 opacity-6 ls-0">Top premium channels</small></h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 text-center divider-left-border border-color-light-2 d-flex align-items-center justify-content-center py-4">
+                <a href=# " class="text-decoration-none " target="_blank ">
+                            <div class="icon-box ">
+                                <i class="icon-bg icon-menu-2 "></i>
+                                <h4 class="text-4 mb-0 ">Support Center</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 text-center divider-left-border border-color-light-2 d-flex align-items-center justify-content-center py-4 ">
+                        <a href="# " class="text-decoration-none " target="_blank ">
+                            <div class="icon-box ">
+                                <i class="icon-bg icon-menu-3 "></i>
+                                <h4 class="text-4 mb-0 ">Online Documentation</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 text-center divider-left-border border-color-light-2 d-flex align-items-center justify-content-center py-4 opacity-5 ">
+                        <a href="# " class="text-decoration-none " target="_blank ">
+                            <div class="icon-box ">
+                                <i class="icon-bg icon-menu-4 "></i>
+                                <h4 class="font-weight-500 text-color-light line-height-1 text-4 mt-0 mb-2 ">Video Tutorials<br><span class="text-2 d-block pt-1 ">(coming soon)</span></h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section bg-color-dark-scale-2 border-0 m-0 py-4 ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col ">
+                            <ul class="list list-unstyled list-inline d-flex align-items-center justify-content-center flex-column flex-lg-row mb-0 ">
+                                <li class="list-inline-item custom-text-color-1 color-inherit mb-lg-0 text-2 pr-2 ">IPTV available packages</li>
+                                <li class="list-inline-item mb-lg-0 "><a href="{% url 'subscribe' %} " class="btn btn-dark btn-modern btn-rounded btn-px-4 py-3 border-0 " target="_blank "> Gen+ IPTV </a></li>
+                                <li class="list-inline-item mb-lg-0 "><a href="{% url 'subscribe2' %} " class="btn btn-dark btn-modern btn-rounded btn-px-4 py-3 border-0 " target="_blank ">Premium IPTV</a></li>
+                                <!-- <li class="list-inline-item mb-lg-0 "><a href="# " class="btn btn-dark btn-modern btn-rounded btn-px-4 py-3 border-0 " target="_blank ">WORDPRESS</a></li>
+                                <li class="list-inline-item mb-lg-0 "><a href="# " class="btn btn-dark btn-modern btn-rounded btn-px-4 py-3 border-0 " target="_blank ">MAGENTO</a></li>
+                                <li class="list-inline-item mb-lg-0 "><a href="# " class="btn btn-dark btn-modern btn-rounded btn-px-4 py-3 border-0 " target="_blank ">SHOPIFY</a></li>
+                                <li class="list-inline-item mb-lg-0 "><a href="# " class="btn btn-dark btn-modern btn-rounded btn-px-4 py-3 border-0 " target="_blank ">DRUPAL</a></li>
+                            -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        {% endblock %}

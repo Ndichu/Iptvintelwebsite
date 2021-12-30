@@ -1,0 +1,97 @@
+{% extends 'nav.html' %} {% load static %} {% block content %}
+
+<div role="main" class="main">
+
+    <section class="page-header page-header-modern bg-color-light-scale-1 page-header-lg">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 align-self-center p-static order-2 text-center">
+
+
+                    <h1 class="font-weight-bold text-dark">Create IPTVintel acount</h1>
+
+                </div>
+
+                <div class="col-md-12 align-self-center order-1">
+
+
+                    <ul class="breadcrumb d-block text-center">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Create account</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container py-4">
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-6 col-lg-5">
+                <!-- {% if form.errors %}
+                <div class="alert alert-warning alert-dismissible">
+                    <a href="{% url 'register' %}" class="close" data-dismiss="alert" aria-label="close">&times;</a> AI Assistant says error with registration.Please close this window and try again.Thank you!
+                </div>
+                {% endif %} -->
+                <h2 class="font-weight-bold text-5 mb-0">Create IPTV intel account</h2>
+                {% if form.errors %}
+                <div class="alert alert-{{ message.tags}}">AI Assistant says password or username error. Close this window and try again. Thank you</div> {% endif %}
+                <!-- <form action="" id="frmSignUp" method="POST">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label class="text-color-dark text-3">Username <span class="text-color-danger">*</span></label>
+                            <input type="text" id="username" name="username" value="" class="form-control form-control-lg text-4" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label class="text-color-dark text-3">Email address <span class="text-color-danger">*</span></label>
+                            <input type="text" id="email" name="email" value="" class="form-control form-control-lg text-4" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label class="text-color-dark text-3">Password <span class="text-color-danger">*</span></label>
+                            <input type="password" placeholder="Password" id="password" value="" class="form-control form-control-lg text-4" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label class="text-color-dark text-3">Confirm Password <span class="text-color-danger">*</span></label>
+                            <input type="password" name="password1" value="" placeholder="Confirm Password" id="confirm_password" class="form-control form-control-lg text-4" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <p class="text-2 mb-2">By creating an acount you agree that your personal data will be used to support your experience throughout this website ONLY, to manage access to your account, and for other purposes described in our <a href="#" class="text-decoration-none">privacy policy.</a></p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-modern btn-block text-uppercase rounded-0 font-weight-bold text-3 py-3" data-loading-text="Loading...">Create account</button>
+
+                </form> -->
+                {%load crispy_forms_tags %}
+                <form action="{% url 'register' %}" id="frmSignUp" method="POST">
+                    {% csrf_token %} {{ form|crispy }}
+                    <button type="submit" class="btn btn-dark btn-modern btn-block text-uppercase rounded-0 font-weight-bold text-3 py-3" data-loading-text="Loading...">Create account</button>
+
+                </form>
+
+                <div class="font-weight-bold text-5 mb-0">
+                    <small class="text-muted">Already have an account?<a class="ml-2" href="{% url 'login_user' %}">Login</a></small>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

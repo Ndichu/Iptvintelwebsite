@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Iptvintel </title>
+
+    <meta name="keywords" content="IPTV intel" />
+    <meta name="description" content="iptv intel - The best choice for your Entertainment" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'website/img/favicon.ico' %}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{% static 'website/img/apple-touch-icon.png' %}" />
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no" />
+
+    <!-- Web Fonts  -->
+    <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css" />
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="{% static 'website/vendor/bootstrap/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'website/vendor/fontawesome-free/css/all.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'website/vendor/animate/animate.compat.css' %}" />
+    <link rel="stylesheet" href="{% static 'website/vendor/simple-line-icons/css/simple-line-icons.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'website/vendor/owl.carousel/assets/owl.carousel.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'website/vendor/owl.carousel/assets/owl.theme.default.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'website/vendor/magnific-popup/magnific-popup.min.css' %}" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="{% static 'website/css/theme.css' %}" />
+    <link rel="stylesheet" href="{% static 'website/css/theme-elements.css' %}" />
+    <link rel="stylesheet" href="{% static 'website/css/theme-blog.css' %}" />
+    <link rel="stylesheet" href="{% static 'website/css/theme-shop.css' %}" />
+
+    <!-- Skin CSS -->
+    <link id="skinCSS" rel="stylesheet" href="{% static 'website/css/skins/default.css' %}" />
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="{% static 'website/css/custom.css' %}" />
+
+    <!-- Head Libs -->
+    <script src="{% static 'website/vendor/modernizr/modernizr.min.js' %}"></script>
+</head>
+
+<body>
+    <div class="body">
+        <header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+            <div class="header-body">
+                <div class="header-container container">
+                    <div class="header-row">
+                        <div class="header-column">
+                            <div class="header-row">
+                                <div class="header-logo">
+                                    <a href="{% url 'home' %}">
+                                        <img alt="" width="200" height="42" data-sticky-width="170" data-sticky-height="41" src="{% static 'website/img/IPTV intel.png' %}" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-column justify-content-end">
+                            <div class="header-row">
+                                <div class="
+                      header-nav
+                      header-nav-line
+                      header-nav-top-line
+                      header-nav-top-line-with-border
+                      order-2 order-lg-1
+                    ">
+                                    <div class="
+                        header-nav-main
+                        header-nav-main-square
+                        header-nav-main-effect-2
+                        header-nav-main-sub-effect-1
+                      ">
+                                        <nav class="collapse">
+                                            <ul class="nav nav-pills" id="mainNav">
+                                                <li class="dropdown">
+                                                    <a class="dropdown-item active" href="{% url 'home' %}">
+                              Home
+                            </a>
+                                                </li>
+
+                                                <li class="dropdown dropdown-mega">
+                                                    <a class="dropdown-item" href="{% url 'about' %}">
+                              About
+                            </a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" data-hash data-hash-offset="68" href="{% url 'contact' %}">Contact Us</a
+                            >
+                          </li>
+                          <li class="dropdown">
+                            <a class="dropdown-item dropdown-toggle">
+                              BUY now!
+                            </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a class="dropdown-item" href="{% url 'subscribe' %}">
+                                  Gen IPTV
+                                </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="{% url 'subscribe2' %}">
+                                  Premium IPTV
+                                </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    {% if user.is_authenticated %}
+                                                    <a href="{% url 'profile' %}" class="font-weight-bold mb-1 dropdown-toggle">
+                                                      {{ user.username }}</a
+                                                    >
+                                                    <img href="{% url 'profile' %}"
+                                                      src="https://img.icons8.com/ios-filled/20/000000/user-male-circle.png"
+                                                    />
+                                                    <a href="{% url 'dashboard' %}" class="font-weight-bold mb-1 dropdown-toggle">
+                                                      Dashboard</a
+                                                    >
+                                                    <ul class="dropdown-menu">
+                                                      <li>
+                                                        <a>
+                                                        <span class="tooltiptext">{{ user.username }}'s profile page</span>
+                                                         </a>
+
+                                                </li>
+                                            </ul>
+                                            </li>
+                                            <li>
+                                                <a class="font-weight-bold mb-1" href="{% url 'logout' %}?next={% url 'home' %}"> logout</a>
+                                                <img src="https://img.icons8.com/material/30/000000/emergency-exit.png" /> {% else %}
+                                            </li>
+
+                                            <li class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle"> Login </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="{% url 'login_user' %}">
+                                  login in
+                                </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="{% url 'register' %}">
+                                  Register
+                                </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            {% endif %}
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    {% if user.is_authenticated %} {% else %}{% endif %}
+
+                                    <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+                      <i class="fas fa-bars"></i>
+                    </button>
+                                </div>
+                                <div class="
+                      header-nav-features
+                      header-nav-features-no-border
+                      header-nav-features-lg-show-border
+                      order-1 order-lg-1
+                    ">
+                                    <div class="
+                        header-nav-feature header-nav-features-search
+                        d-inline-flex
+                      ">
+                                        <a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch"><i class="fas fa-search header-nav-top-icon"></i
+                      ></a>
+                                        <div class="
+                          header-nav-features-dropdown
+                          header-nav-features-dropdown-mobile-fixed
+                        " id="headerTopSearchDropdown">
+                                            <form role="search" action="#" method="get">
+                                                <div class="simple-search input-group">
+                                                    <input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search..." />
+                                                    <span class="input-group-append">
+                              <button class="btn" type="submit">
+                                <i
+                                  class="
+                                    fas
+                                    fa-search
+                                    header-nav-top-icon
+                                    text-color-dark
+                                  "
+                                ></i>
+                              </button>
+                            </span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% if user.is_authenticated %} {% else %}
+                                <div class="header-nav-features order-1 order-lg-1">
+                                    <div class="
+                        header-nav-feature header-nav-features-social-icons
+                        d-inline-flex
+                      ">
+                                        <ul class="
+                          header-social-icons
+                          social-icons
+                          d-none d-sm-block
+                          social-icons-clean
+                          ml-0
+                        ">
+                                            <li class="social-icons-facebook">
+                                                <a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i
+                          ></a>
+                                            </li>
+                                            <li class="social-icons-twitter">
+                                                <a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i
+                          ></a>
+                                            </li>
+                                            <li class="social-icons-linkedin">
+                                                <a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i
+                          ></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- <a class="btn btn-gradient btn-rounded font-weight-semibold px-4 ml-3" href="{% url 'subscribe' %}" target="_blank">Subscribe NOW!</a> -->
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        {% block content %} {% endblock %}
+
+        <footer id="footer " class="border-0" style="
+          background: url('{% static 'website/img/parallax/footer.png' %}');
+          background-size: cover;
+          background-position: 0 100%;
+        ">
+            <div class="container py-4">
+                <div class="row justify-content-md-center py-5 mt-3">
+                    <div class="
+                col-md-12 col-lg-3
+                d-flex
+                align-items-center
+                justify-content-center justify-content-lg-start
+                mb-5 mb-lg-0
+              ">
+                        <a href="{% url 'home' %}"><img src="{% static 'website/img/IPTV intel.png' %} " alt="Logo " class="img-fluid" style="max-width: 100px" /></a>
+                    </div>
+                    <div class="col-md-6 col-lg-2 text-center text-lg-left mb-5 mb-lg-0">
+                        <h5 class="
+                  text-5 text-transform-none
+                  font-weight-semibold
+                  text-color-light
+                  mb-4
+                ">
+                            Pages
+                        </h5>
+                        <ul class="list list-unstyled">
+                            <li class="mb-1">
+                                <a href="{% url 'subscribe' %}" class="link-hover-style-1">BUY now!</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a href="{% url 'about' %}" class="link-hover-style-1">
+                    About Us</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a href="{% url 'contact' %}" class="link-hover-style-1">
+                    Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-md-6 col-lg-2 text-center text-lg-left mb-5 mb-lg-0"
+            >
+              <h5
+                class="
+                  text-5 text-transform-none
+                  font-weight-semibold
+                  text-color-light
+                  mb-4
+                "
+              >
+                Links
+              </h5>
+              <ul class="listy list-unstyled">
+                <li class="mb-1">
+                  <a href="{% url 'contact' %}" class="link-hover-style-1">
+                    FAQ's</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a href="{% url 'contact' %}" class="link-hover-style-1">
+                    Sitemap</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-5 text-center text-lg-left">
+              <h5
+                class="
+                  text-5 text-transform-none
+                  font-weight-semibold
+                  text-color-light
+                  mb-4
+                "
+              >
+                Newsletter
+              </h5>
+              <div class="alert alert-success d-none" id="newsletterSuccess ">
+                <strong>Success!</strong> You've been added to our email list.
+              </div>
+              <div
+                class="alert alert-danger d-none"
+                id="newsletterError "
+              ></div>
+              <!-- <form id="newsletterForm " action="php/newsletter-subscribe.php " method="POST " class="mb-3 mb-md-0 "> -->
+
+              <form
+                id="newsletterForm "
+                action="# "
+                method="POST "
+                class="mb-3 mb-md-0"
+              >
+                <div class="input-group input-group-rounded">
+                  <input
+                    class="form-control form-control-sm bg-light"
+                    placeholder="Email Address "
+                    name="newsletterEmail "
+                    id="newsletterEmail "
+                    type="text "
+                  />
+                  <span class="input-group-append">
+                    <button
+                      class="btn btn-light text-color-dark"
+                      type="submity "
+                    >
+                      <strong>GO !</strong>
+                    </button>
+                  </span>
+                </div>
+              </form>
+              <p class="mt-3 mb-0 text-center text-lg-left">
+                <i class="fab fa-whatsapp text-color-primary"></i
+                ><span class="text-color-light opacity-7 pl-2"
+                  >(254)0254025401</span
+                >
+                <i class="far fa-envelope text-color-primary ml-4"></i
+                ><a
+                  href="mailto:mail@iptv.com "
+                  class="opacity-7 pl-2 text-color-light"
+                  >mail@iptvintel.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="
+            footer-copyright footer-copyright-style-2
+            bg-transparent
+            footer-top-light-border
+          "
+        >
+          <div class="container py-2">
+            <div class="row py-4">
+              <div
+                class="
+                  col
+                  d-flex
+                  align-items-center
+                  justify-content-center
+                  mb-4 mb-lg-0
+                "
+              >
+                <p>© Copyright 2021. All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="telegram-popup " align="center ">
+
+                <p></p> -->
+        <!-- Telegram icon. I like to use font-awesome but dont want to effect your imports too much.-->
+        <!-- <a href="https://t.me/Market_Protocol_Chat " class="telegram-button-link ">
+                    <div class="telegram-button ">
+                        <p>
+                            <i class="fab fa-telegram-plane fa-2x "></i>
+
+                        </p>
+
+                    </div>
+                </a>
+                    </div> -->
+
+                    <a href="https://telegram.im/@IPTVIntel" target="_blank" class="telegramim_button telegramim_shadow telegramim_pulse" style="
+            font-size: 26px;
+            width: 48px;
+            background: #27a5e7;
+            box-shadow: 1px 1px 5px #27a5e7;
+            color: #ffffff;
+            border-radius: 46px;
+            float: right;
+            position: fixed;
+            bottom: 60px;
+            right: 15px;
+          " title=""><i></i
+        ></a>
+        </footer>
+        </div>
+
+        <!-- Vendor -->
+
+        <script src="{% static 'website/vendor/jquery/jquery.min.js' %} "></script>
+        <script src="{% static 'website/vendor/jquery.appear/jquery.appear.min.js' %} "></script>
+        <script src="{% static 'website/vendor/jquery.easing/jquery.easing.min.js' %} "></script>
+        <script src="{% static 'website/vendor/jquery.cookie/jquery.cookie.min.js' %} "></script>
+        <script src="{% static 'website/vendor/popper/umd/popper.min.js' %} "></script>
+        <script src="{% static 'website/vendor/bootstrap/js/bootstrap.min.js' %} "></script>
+        <script src="{% static 'website/vendor/jquery.validation/jquery.validate.min.js' %} "></script>
+        <script src="{% static 'website/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js' %} "></script>
+        <script src="{% static 'website/vendor/jquery.gmap/jquery.gmap.min.js' %} "></script>
+        <script src="{% static 'website/vendor/lazysizes/lazysizes.min.js' %} "></script>
+        <script src="{% static 'website/vendor/isotope/jquery.isotope.min.js' %} "></script>
+        <script src="{% static 'website/vendor/owl.carousel/owl.carousel.min.js' %} "></script>
+        <script src="{% static 'website/vendor/magnific-popup/jquery.magnific-popup.min.js' %} "></script>
+        <script src="{% static 'website/vendor/vide/jquery.vide.min.js' %} "></script>
+        <script src="{% static 'website/vendor/vivus/vivus.min.js' %} "></script>
+
+        <!-- Theme Base, Components and Settings -->
+        <script src="{% static 'website/js/theme.js' %} "></script>
+
+        <!-- Theme Custom -->
+        <script src="{% static 'website/js/custom.js' %} "></script>
+
+        <!-- Theme Initialization Files -->
+        <script src="{% static 'website/js/theme.init.js' %} "></script>
+</body>
+
+</html>
